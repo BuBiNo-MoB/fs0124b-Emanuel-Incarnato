@@ -19,51 +19,56 @@ h2{
     font-weight: 400;
     color:  rgb(247, 177, 72);
 }
+
 .articolo{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
+
 li{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
 p{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
 .credit{
     color: rgb(249, 199, 125);
 }
+
 .credit a{
     color: rgb(249, 199, 125);
 }
+
 .appear{
     color: rgb(247, 177, 72);
 }
+
 .appear a{
     color: rgb(8, 133, 133);
 }
+
 .finale a{
     color: rgb(8, 133, 133);
 }
 
-body {
+header {
     text-align: center;
     margin: 0;
 }
-ul {
-    margin-bottom: 0rem;
+
+article{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
 }
 
-ol{
-    margin-bottom: 0;
-    padding-left: 1rem;
-}
 
-li {
-    margin-bottom: 0em
-}
-ul{
-    padding-left: 1em;
-    margin-bottom: 0em;
+.content{
+    width: 800px;
+    margin: 0 auto;
+    
 }
