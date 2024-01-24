@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+hr{
+    border-top: 3px solid rgb(8, 133, 133);
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.sub{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:  rgb(247, 177, 72);
+}
+.articolo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.credit{
+    color: rgb(249, 199, 125);
+}
+.credit a{
+    color: rgb(249, 199, 125);
+}
+.appear{
+    color: rgb(247, 177, 72);
+}
+.appear a{
+    color: rgb(8, 133, 133);
+}
+.finale a{
+    color: rgb(8, 133, 133);
+}
+
+body {
+    text-align: center;
+    margin: 0;
+}
+ul {
+    margin-bottom: 0rem;
+}
+
+ol{
+    margin-bottom: 0;
+    padding-left: 1rem;
+}
+
+li {
+    margin-bottom: 0em
+}
+ul{
+    padding-left: 1em;
+    margin-bottom: 0em;
+}
