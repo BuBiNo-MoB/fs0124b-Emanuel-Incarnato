@@ -12,8 +12,8 @@ header{
     font-family: 'Poppins', 'san-serif';
     text-align: center;
     padding: 25px;
-    background-color: aqua;
-    max-width: 475px;
+    background-color: #0088aa;
+    max-width: 425px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
@@ -63,8 +63,14 @@ aside{
 
 footer{
     font-family: 'Poppins', 'san-serif';
-    margin: 25px;
     text-align: center;
+    padding: 25px;
+    background-color: #0088aa;
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .correlati{
@@ -73,10 +79,22 @@ footer{
     text-align: center;
     text-align: center;
     padding: 25px;
-    background-color: rgb(143, 143, 143);
+    background-color: rgb(#aeb4b5);
     max-width: 425px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
     border: 1px solid grey;
+}
+
+.novità{font-family: 'Poppins', 'san-serif';
+    margin: 25px;
+    text-align: center;
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(#e1e7e8);
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
 }
