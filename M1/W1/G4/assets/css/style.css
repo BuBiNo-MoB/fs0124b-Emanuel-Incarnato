@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-image: url(../img/sfondo.png);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    border: 1px solid #000;
+}
+
+header{
+    font-family: 'Poppins', 'san-serif';
+    text-align: center;
+    padding: 25px;
+    background-color: aqua;
+    max-width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+article{
+    font-family: 'Poppins', 'san-serif';
+    margin: 25px;
+    text-align: center;
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border: 1px solid grey;
+}
+
+main{
+    font-family: 'Poppins', 'san-serif';
+    margin: 25px;
+    text-align: center;
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border: 1px solid grey;
+}
+
+aside{
+    font-family: 'Poppins', 'san-serif';
+    margin: 25px;
+    text-align: center;
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border: 1px solid grey;
+}
+
+footer{
+    font-family: 'Poppins', 'san-serif';
+    margin: 25px;
+    text-align: center;
+}
+
+.correlati{
+    font-family: 'Poppins', 'san-serif';
+    margin: 25px;
+    text-align: center;
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(143, 143, 143);
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border: 1px solid grey;
+}
