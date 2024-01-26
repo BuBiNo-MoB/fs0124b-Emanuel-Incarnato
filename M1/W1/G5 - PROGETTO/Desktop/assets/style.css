@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+body{
+    color: #393d41;
+    font-size: 1.2em;
+    font-family: 'Open Sans';
+    line-height: 1.65;
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    line-height: 1.5em;
+}
+
+.main-develop {
+    text-align: center;
+    background-image: url(./images/banner.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans';
+    font-size: 1.2;
+    line-height: 1.65;
+    height: 300px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #25a2c3;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+    font-style: bold;
+
+}
+
+h2{text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #25a2c3;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+    font-style: bold;
+    font-size: 700;
+
+}
+
+.artic{
+    text-align: center; 
+    font-family: 'Open Sans';
+    font-size: 1.2;
+    line-height: 1.65;
+
+}
+
+.arancio{
+    text-align: center;
+    background-color: #e22d0e;
+    color: white;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+.arancio h2{
+    color: white;
+    font-style: bold;
+}
+
+
+.box1{
+    border: 1px solid #dee1e3;
+    text-align: center;    
+    padding-bottom: 2em;
+    margin: 1em;
+}
+
+.box2{
+    border: 1px solid #dee1e3;
+    text-align: center;
+    padding-bottom: 2em;
+    margin: 1em;
+}
+
+.box3{
+    border: 1px solid #dee1e3;
+    text-align: center;
+    padding-bottom: 2em;
+    margin: 1em;
+}
+
+.fine {
+    background-color: #25a2c3;
+    color: white;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.fine h2{
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 0.8em;
+}
+
+a{
+    color: white;
+}
+
+.bottonpart{
+    background: #f04c2f;
+    border: 1px solid #f04c2f;
+    border-radius: 10%;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+    font-style: bold;
+    font-size: 700;
+    width: 30%;
+    padding: 0.8em;
+    margin-left: 155px;
+    margin-top: 25px;
+}
+
+#imgtonda {
+    border-radius: 100%;
+}
+
+#ruolo{
+    padding-bottom: 1em;
+}
+
+#ruolo3{
+    padding-bottom: 2em;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+hr{
+    width: 40%;
+}
+
+#enfasi {
+    font-style: italic;
+}
