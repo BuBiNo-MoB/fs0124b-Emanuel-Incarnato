@@ -35,7 +35,7 @@ h1{
     color: #25a2c3;
     font-family: 'Montserrat';
     line-height: 1.5;
-    font-style: bold;
+    font-weight: bold;
 
 }
 
@@ -45,7 +45,7 @@ h2{text-align: center;
     color: #25a2c3;
     font-family: 'Montserrat';
     line-height: 1.5;
-    font-style: bold;
+    font-weight: bold;
     font-size: 700;
 
 }
@@ -68,7 +68,7 @@ h2{text-align: center;
 
 .arancio h2{
     color: white;
-    font-style: bold;
+    font-weight: bold;
 }
 
 
@@ -113,10 +113,10 @@ a{
 .bottonpart{
     background: #f04c2f;
     border: 1px solid #f04c2f;
-    border-radius: 10%;
+    border-radius: 20%;
     font-family: 'Montserrat';
     line-height: 1.5;
-    font-style: bold;
+    font-weight: bold;
     font-size: 700;
     width: 30%;
     padding: 0.8em;
@@ -147,4 +147,8 @@ hr{
 
 #enfasi {
     font-style: italic;
+}
+
+.arancio #grass{
+    font-weight: bold;
 }

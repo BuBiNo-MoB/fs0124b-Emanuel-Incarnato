@@ -8,11 +8,11 @@ body{
 }
 
 header{
-    text-align: center;
     background-color: black;
     padding-top: 2em;
     padding-bottom: 2em;
     line-height: 1.5em;
+    padding-left: 1.5em;
 }
 
 .main-develop {
@@ -25,7 +25,7 @@ header{
     font-family: 'Open Sans';
     font-size: 1.2;
     line-height: 1.65;
-    height: 300px;
+    height: 400px;
 }
 
 h1{
@@ -35,7 +35,7 @@ h1{
     color: #25a2c3;
     font-family: 'Montserrat';
     line-height: 1.5;
-    font-style: bold;
+    font-weight: bold;
 
 }
 
@@ -45,7 +45,7 @@ h2{text-align: center;
     color: #25a2c3;
     font-family: 'Montserrat';
     line-height: 1.5;
-    font-style: bold;
+    font-weight: bold;
     font-size: 700;
 
 }
@@ -55,6 +55,8 @@ h2{text-align: center;
     font-family: 'Open Sans';
     font-size: 1.2;
     line-height: 1.65;
+    display: flex;
+    justify-content: space-around;
 
 }
 
@@ -68,7 +70,7 @@ h2{text-align: center;
 
 .arancio h2{
     color: white;
-    font-style: bold;
+    font-weight: bold;
 }
 
 
@@ -77,6 +79,7 @@ h2{text-align: center;
     text-align: center;    
     padding-bottom: 2em;
     margin: 1em;
+    width: 30%;
 }
 
 .box2{
@@ -84,6 +87,7 @@ h2{text-align: center;
     text-align: center;
     padding-bottom: 2em;
     margin: 1em;
+    width: 30%;
 }
 
 .box3{
@@ -91,6 +95,7 @@ h2{text-align: center;
     text-align: center;
     padding-bottom: 2em;
     margin: 1em;
+    width: 30%;
 }
 
 .fine {
@@ -113,19 +118,21 @@ a{
 .bottonpart{
     background: #f04c2f;
     border: 1px solid #f04c2f;
-    border-radius: 10%;
+    border-radius: 20%;
     font-family: 'Montserrat';
     line-height: 1.5;
-    font-style: bold;
-    font-size: 700;
-    width: 30%;
+    font-weight: bold;
+    width: 15%;
     padding: 0.8em;
-    margin-left: 155px;
-    margin-top: 25px;
+    margin-left: 42%;
+    margin-top: 4em;
 }
 
 #imgtonda {
     border-radius: 100%;
+    height: 25%;
+    margin-top: 4em;
+    margin-left: 6em;
 }
 
 #ruolo{
@@ -147,4 +154,19 @@ hr{
 
 #enfasi {
     font-style: italic;
+}
+
+.scatoloni{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.contenitoreg{
+    display: flex;
+    justify-content: space-around;
+}
+
+.arancio #grass{
+    font-weight: bold;
 }
