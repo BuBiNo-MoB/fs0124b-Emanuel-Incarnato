@@ -51,6 +51,8 @@ let a = 12
 
 console.log( a + 20)
 
+console.log (12+20)
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 4
