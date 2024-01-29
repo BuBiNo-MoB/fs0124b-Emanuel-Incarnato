@@ -72,7 +72,7 @@ console.log (myName)
 
 const testimpossibilità = 'Ovolollo'
 
-// testimpossibilità = 'Sblindol'  //rimuovere il commento per verificare 
+//testimpossibilità = 'Sblindol'  /*rimuovere il commento " // " per verificare*/
 
 console.log (testimpossibilità)
 
