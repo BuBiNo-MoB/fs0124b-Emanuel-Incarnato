@@ -109,8 +109,8 @@
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
-{
 
+/*{
   let numero1 = 8
   let numero2 = 12
   let numero3 = 4
@@ -118,9 +118,8 @@
   if (numero1 > numero3 && numero2 > numero3){
     console.log(numero3, numero1, numero2)
   }
-
 }
-
+*/
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -152,19 +151,19 @@ if (typeof valore === "number") {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
+ /*ESERCIZIO 10
+  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.*/
 
 
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
+  let val = 4
+  if (val < 5) {
       console.log("Meno di 5");
+    } else if (val < 10) {
+      console.log("Meno di 10");
     } else {
       console.log("Uguale a 10 o maggiore");
     }
-*/
+
 
 
 /* ESERCIZIO 11
@@ -199,10 +198,16 @@ delete me.skills[2]
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-let array = [1,2,3,4,5,6,7,8,9,10];
+let array = [];
+
+array.push(1,2,3,4,5,6,7,8,9,10);
 
 console.log(array)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
+
+array.splice(9,1,100);
+
+console.log(array)
