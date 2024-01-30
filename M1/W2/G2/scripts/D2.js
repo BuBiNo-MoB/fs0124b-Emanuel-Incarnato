@@ -154,7 +154,7 @@ if (typeof valore === "number") {
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-*/
+
 
   let val = 7
   if (val < 10) {
@@ -164,9 +164,8 @@ if (typeof valore === "number") {
     } else {
       console.log("Uguale a 10 o maggiore");
     }
+*/
 
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -181,18 +180,18 @@ me.city = 'Toronto'
 console.log(me)
 
 
-
-/* SCRIVI QUI LA TUA RISPOSTA */
-
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName
+console.log(me)
+
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
+delete me.skills[2]
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -200,10 +199,10 @@ console.log(me)
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let array = [1,2,3,4,5,6,7,8,9,10];
+
+console.log(array)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
