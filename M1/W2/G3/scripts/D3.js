@@ -159,19 +159,19 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     case 'blue':
       eyeColor.blue.push(character);
       break;
-    case 'yellow':
+      case 'yellow':
       eyeColor.yellow.push(character);
       break;
-    case 'brown':
+      case 'brown':
       eyeColor.brown.push(character);
       break;
-    case 'red':
+      case 'red':
       eyeColor.red.push(character);
       break;
       case 'blue-gray':
       eyeColor.blueGray.push(character);
       break;
-    default:
+      default:
       break;
   }
 }
