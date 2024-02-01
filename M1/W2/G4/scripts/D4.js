@@ -58,18 +58,18 @@ console.log(crazyDiff(25))
 
 function boundary(n){
     if(n >= 20 && n <= 100){
-        console.log(true)
+        return true
     }
     else if( n == 400 ){
-        console.log(true)
+        return true
     }
     else if( n > 100 && n < 400 ){
-        console.log(false)
+        return false
     }
 }
-boundary(101)
-boundary(21)
-boundary(400)
+console.log(boundary(101))
+console.log(boundary(21))
+console.log(boundary(400))
 
 
 /* ESERCIZIO 5
@@ -96,15 +96,15 @@ console.log(epify("casa"))
 
 function check3and7(n){
     if(n % 3 == 0 || n % 7 == 0){
-        console.log(true)
+        return true
     }else{
-        console.log(false)
+        return false
     }
 }
-check3and7(5)
-check3and7(6)
-check3and7(21)
-check3and7(23)
+console.log(check3and7(5))
+console.log(check3and7(6))
+console.log(check3and7(21))
+console.log(check3and7(23))
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
@@ -138,8 +138,7 @@ function upperFirst(inputString) {
     return resultString;
 }
 
-
-const inside = "sa sa prova prova";
+const inside = "sopra la panca la capra campa sotto la panca la capra crepa";
 const output = upperFirst(inside);
 console.log(output); 
 
