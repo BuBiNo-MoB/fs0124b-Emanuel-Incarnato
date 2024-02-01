@@ -120,20 +120,35 @@ const input = "EPICODE";
 const reversedOutput = reverseString(input);
 console.log(reversedOutput); 
 
-
-
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
+function upperFirst(inputString) {
+    const words = inputString.split(' ');
+    const capitalizedWords = words.map(word => {
+    const firstLetter = word.charAt(0).toUpperCase();
+    const restOfWord = word.slice(1).toLowerCase();
+    return firstLetter + restOfWord;
+    });
+
+    const resultString = capitalizedWords.join(' ');
+
+    return resultString;
+}
+
+
+const inside = "sa sa prova prova";
+const output = upperFirst(inside);
+console.log(output); 
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
@@ -143,4 +158,3 @@ function giveMeRandom(){
     return Math.floor(Math.random() *10)+1;
     }
     console.log(giveMeRandom())
-    
