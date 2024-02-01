@@ -38,50 +38,95 @@ function crazySum(a , b){
 */
 
 
-function crazyDiff(){
-    let diffAss = Math.abs(20 - 19);
-    if (20 > 19 ){
+function crazyDiff(x){
+    let diffAss = Math.abs(x - 19);
+    if (x > 19 ){
         return diffAss * 3
     }else {
         return diffAss
     }
 }
-console.log(crazyDiff())
+
+console.log(crazyDiff(17))
+console.log(crazyDiff(25))
 
 /* ESERCIZIO 4
- Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
+ Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, 
+ e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
 
+function boundary(n){
+    if(n >= 20 && n <= 100){
+        console.log(true)
+    }
+    else if( n == 400 ){
+        console.log(true)
+    }
+    else if( n > 100 && n < 400 ){
+        console.log(false)
+    }
+}
+boundary(101)
+boundary(21)
+boundary(400)
 
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
- La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
- ritornare la stringa originale senza alterarla.
+ La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora
+ deve ritornare la stringa originale senza alterarla.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function epify(stringa) {
+    if (stringa.startsWith("EPICODE")) {
+        return stringa;
+    } else {
+        return "EPICODE " + stringa;
+    }
+}
+
+console.log(epify("EPICODE"))
+console.log(epify("casa"))
 
 /* ESERCIZIO 6
- Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
- di 3 o di 7. (Suggerimento: usa l'operatore modulo)
+ Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia 
+ un multiplo di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function check3and7(n){
+    if(n % 3 == 0 || n % 7 == 0){
+        console.log(true)
+    }else{
+        console.log(false)
+    }
+}
+check3and7(5)
+check3and7(6)
+check3and7(21)
+check3and7(23)
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function reverseString(string) {
+    const characters = string.split('');
+    const reversedCharacters = characters.reverse();
+    const reversedString = reversedCharacters.join('');
+    return reversedString;
+}
+const input = "EPICODE";
+const reversedOutput = reverseString(input);
+console.log(reversedOutput); 
+
+
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -94,4 +139,7 @@ console.log(crazyDiff())
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(){
+    return Math.floor(Math.random() *10)+1;
+    }
+    console.log(giveMeRandom())
