@@ -24,11 +24,13 @@ header{
 .startMenu li{
     display: inline;
     margin-right: 1em;
+    font-size: small;
 }
 
 
 #arancio{
     background-color: #f56600;
+    font-size: medium;
     color: white;
     text-align: center;
     margin: 2em;
@@ -36,32 +38,34 @@ header{
     padding-bottom: 0.5em;
 }
 
-.container{
+#container{
     display: flex;
     justify-content: space-between;
     margin-top: 1em;
     margin-left: 4em;
     margin-right: 4em;
 }
-.container img{
+#container img{
     border-radius: 8%;
+    object-fit: cover;
 }
 
 #regalo a{
-    color: #347881;
+    color: #1c6b77;
     text-decoration: none;
     padding-left: 0.5em;
+    font-size: medium;
 }
 
 #regalo{
     padding-left: 4em;
     font-weight: bold;
+    font-size: larger;
 }
 
 .verdone{
-    background-image: url(../images/bg-image.png);
-    background-repeat: repeat;
-    background-position: center;
+    background-image: url(../images/bg-image.png);  
+    object-fit: cover;
     padding-top: 5em;
     padding-bottom: 5em;
     margin-left: 2em;
@@ -73,8 +77,12 @@ header{
     padding: 3em;
 }
 .verdone h2{
-    margin-bottom: 1em;
-    font-size: large;
+    margin-bottom: 0.8em;
+    font-size: xx-large;
+}
+
+.compraOra{
+    background-color: #ffffff;
 }
 
 #visore{
@@ -82,22 +90,26 @@ header{
     padding-top: 2em;
     padding-bottom: 2em;
     font-weight: bold;
+    font-size: larger;
 }
 #visore a{
-    color: #347881;
+    color: #1c6b77;
     text-decoration: none;
     margin-left: 0.5em;
+    font-size: medium
 }
 
 #cuffie{
     text-align: center;
     padding-bottom: 2em;
     font-weight: bold;
+    font-size: larger;
 }
 #cuffie a{
-    color: #347881;
+    color: #1c6b77;
     text-decoration: none;
     margin-left: 0.5em;
+    font-size: medium
 }
 
 #foot1{
