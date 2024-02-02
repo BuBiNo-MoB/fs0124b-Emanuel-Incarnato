@@ -138,3 +138,84 @@ while (i < numericArray.length) {
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
+
+function posizioniAlfabetoItaliano(caratteriIta) {
+  const alfabetoItaliano = 'abcdefghijklmnopqrstuvwxyz'.split('')
+  const posizioni = []
+
+  for (let carattereIta of caratteriIta) {
+    switch (carattereIta.toLowerCase()) {
+      case 'a':
+        posizioni.push(alfabetoItaliano.indexOf('a') + 1);
+        break;
+      case 'b':
+        posizioni.push(alfabetoItaliano.indexOf('b') + 1);
+        break;
+      case 'c':
+        posizioni.push(alfabetoItaliano.indexOf('c') + 1);
+        break;
+      case 'd':
+        posizioni.push(alfabetoItaliano.indexOf('d') + 1);
+        break;
+      case 'e':
+        posizioni.push(alfabetoItaliano.indexOf('e') + 1);
+        break;
+      case 'f':
+        posizioni.push(alfabetoItaliano.indexOf('f') + 1);
+        break;
+      case 'g':
+        posizioni.push(alfabetoItaliano.indexOf('g') + 1);
+        break;
+      case 'h':
+        posizioni.push(alfabetoItaliano.indexOf('h') + 1);
+        break;
+      case 'i':
+        posizioni.push(alfabetoItaliano.indexOf('i') + 1);
+        break;
+      case 'l':
+        posizioni.push(alfabetoItaliano.indexOf('l') + 1);
+        break;
+      case 'm':
+        posizioni.push(alfabetoItaliano.indexOf('m') + 1);
+        break;
+      case 'n':
+        posizioni.push(alfabetoItaliano.indexOf('n') + 1);
+        break;
+      case 'o':
+        posizioni.push(alfabetoItaliano.indexOf('o') + 1);
+        break;
+      case 'p':
+        posizioni.push(alfabetoItaliano.indexOf('p') + 1);
+        break;
+      case 'q':
+        posizioni.push(alfabetoItaliano.indexOf('q') + 1);
+        break;
+      case 'r':
+        posizioni.push(alfabetoItaliano.indexOf('r') + 1);
+        break;
+      case 's':
+        posizioni.push(alfabetoItaliano.indexOf('s') + 1);
+        break;
+      case 't':
+        posizioni.push(alfabetoItaliano.indexOf('t') + 1);
+        break;
+      case 'u':
+        posizioni.push(alfabetoItaliano.indexOf('u') + 1);
+        break;
+      case 'v':
+        posizioni.push(alfabetoItaliano.indexOf('v') + 1);
+        break;
+      case 'z':
+        posizioni.push(alfabetoItaliano.indexOf('z') + 1);
+        break;
+      default:
+        posizioni.push(null);
+    }
+  }
+  return posizioni
+}
+
+const arrayDiCaratteri = ['a','b','c','d','e','f','p','q','r','z']
+const risultato = posizioniAlfabetoItaliano(arrayDiCaratteri)
+
+console.log(risultato)
