@@ -1,0 +1,107 @@
+body{
+    font-family: arial;
+}
+
+header{
+    background-color: #222f3f;
+}
+
+.startMenu{
+    background-color: #364759;
+}
+
+.startMenu a{
+    color: white;
+    text-decoration: none;
+}
+
+#arancio{
+    background-color: #f56600;
+    color: white;
+    text-align: center;
+    margin: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+.container img{
+    border-radius: 8%;
+}
+
+#regalo a{
+    color: #347881;
+    text-decoration: none;
+    padding-left: 0.5em;
+}
+
+#regalo{
+    padding-left: 4em;
+    font-weight: bold;
+}
+
+.verdone{
+    background-image: url(../images/bg-image.png);
+    background-repeat: repeat;
+    background-position: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 3em;
+}
+.verdone h2{
+    margin-bottom: 1em;
+    font-size: large;
+}
+
+#visore{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-weight: bold;
+}
+#visore a{
+    color: #347881;
+    text-decoration: none;
+    margin-left: 0.5em;
+}
+
+#cuffie{
+    text-align: center;
+    padding-bottom: 2em;
+    font-weight: bold;
+}
+#cuffie a{
+    color: #347881;
+    text-decoration: none;
+    margin-left: 0.5em;
+}
+
+#foot1{
+    text-align: center;
+    background-color: #364759;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#foot1 a{
+    color: white;
+}
+
+
+#foot2{
+    text-align: center;
+    background-color: #222f3f;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
