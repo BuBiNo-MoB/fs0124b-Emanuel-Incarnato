@@ -1,5 +1,6 @@
 body{
     font-family: arial;
+    background-color: #ececec;
 }
 
 header{
@@ -42,8 +43,8 @@ header{
     display: flex;
     justify-content: space-between;
     margin-top: 1em;
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 #container img{
     border-radius: 8%;
@@ -58,7 +59,7 @@ header{
 }
 
 #regalo{
-    padding-left: 4em;
+    padding-left: 1em;
     font-weight: bold;
     font-size: larger;
 }
@@ -83,6 +84,11 @@ header{
 
 .compraOra{
     background-color: #ffffff;
+    border: solid #ffffff;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 #visore{
