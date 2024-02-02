@@ -6,14 +6,26 @@ header{
     background-color: #222f3f;
 }
 
+#logo img{
+    padding-left: 2em;
+}
+
 .startMenu{
     background-color: #364759;
+    padding-left: 2em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
 }
 
 .startMenu a{
     color: white;
     text-decoration: none;
 }
+.startMenu li{
+    display: inline;
+    margin-right: 1em;
+}
+
 
 #arancio{
     background-color: #f56600;
