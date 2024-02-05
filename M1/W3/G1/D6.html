@@ -205,7 +205,7 @@
         let hideH1 = document.querySelector('h1');
 
         hideH1.addEventListener('click', function() {
-          
+
           let currentText = hideH1.textContent;
 
           let newText = currentText.slice(0, -1);
@@ -218,7 +218,22 @@
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
 
-      const revealFooterLink = function () {}
+      const revealFooterLink = function () {
+
+        let foot = document.querySelector("footer")
+
+        let linka = document.querySelector("footer a")
+
+        foot.addEventListener("click", function() {
+
+          let url = link.getAttribute("href")
+          
+          alert()
+
+        })
+
+      }
+      revealFooterLink()
 
       /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
