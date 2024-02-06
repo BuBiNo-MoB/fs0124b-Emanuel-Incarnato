@@ -102,6 +102,18 @@ console.log(risultato);*/
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+let words = ["hola", "sblindolo", "hello"];
+
+function getLength(word) {
+
+  return word.length
+
+}
+
+let lengths = words.map(getLength);
+console.log(lengths)
+
+
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
@@ -240,21 +252,42 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+
+function filmTotali (array) {
+
+  return array.length;
+
+}
+
+let nFilm = filmTotali (array)
+console.log(filmTotali(array))
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+function millennials (movies){
+
+  return movies.Year > 1999
+
+}
+
+let millennium = movies.filter(millennials)
+console.log(millennium)
+
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
