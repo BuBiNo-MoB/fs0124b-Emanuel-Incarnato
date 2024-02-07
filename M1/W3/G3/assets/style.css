@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ececec;
+}
+
+header h1{
+    font-weight: bold;
+    margin-top: 0.5em;
+    font-size: xx-large;
+}
+
+header h2{
+    font-weight: 500;
+    margin-top: 0.2em;
+    font-size: larger;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    margin-left: 3em;
+    margin-top: 3em;
+}
