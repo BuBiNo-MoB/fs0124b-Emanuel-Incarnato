@@ -3,16 +3,60 @@ body{
     background-color: #c8e2ee;
 }
 
+header{
+    color: #003147;
+    background-color: #34ace3;
+    padding-bottom: 2em;
+}
+
 header h1{
     font-weight: bold;
-    margin-top: 0.5em;
     font-size: xx-large;
     text-align: center;
+    font-style: italic;
 }
 
 header h2{
     font-weight: 500;
     margin-top: 0.2em;
-    font-size: larger;
+    font-size: medium;
     text-align: center;
+    font-style: italic;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 1em;
+}
+
+.tabellone{
+    padding-right: 1em;
+    display: grid;
+    grid-template-columns: repeat(18, 5%);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.celle{
+    margin-top: 1em;
+    border: solid 2px ;
+    border-radius: 20%;
+    text-align: center;
+    padding-top: 2em;
+    background-color: rgb(204, 200, 207);
+}
+
+.posEstratti{
+    margin-top: 1em;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.posEstratti p{
+    color: #9c3306;
+    font-size: xx-large;
 }

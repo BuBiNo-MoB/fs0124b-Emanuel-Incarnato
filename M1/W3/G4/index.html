@@ -10,18 +10,22 @@
 <body>
     <header>
         <div>
-            <img src="./assets/images/tux logo.png" alt="logo" width="5%">
+            <a href="https://fedoraproject.org/" target="_blank"><img src="./assets/images/tux logo.png" alt="logo" width="4%"></a>
         </div>
         <h1>Giochiamo a Tombola</h1>
-        <h2>Premi il bottone per iniziare</h2>
     </header>
 
-    <main>
+    <div class="btn">
+        <button id="bottone">Estrai il numero</button>
+    </div>
 
-        <div class="tabellone"></div>
-        
-    </main>
-
+    
+    <div class="tabellone"></div>
+    
+    <div class="posEstratti">
+        <p id="nEstratto"></p>
+    </div>
+    
 
     <script src="./assets/Script/D4.js"></script>
 </body>
