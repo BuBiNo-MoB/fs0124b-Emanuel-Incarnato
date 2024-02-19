@@ -1,20 +1,41 @@
 /* IMPOSTAZIONI GENERALI */
-html {font-size: 62.5%;}
-body { 
-    font-family: Poppins, 'Helvetica Neue', sans-serif;
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Poppins, "Helvetica Neue", sans-serif;
     font-size: 1.4rem;
     line-height: 1.5;
     padding: 15px;
-    background-image: url('../img/sfondo.png');
+    background-image: url("../img/sfondo.png");
     background-position: center center;
 }
-* {box-sizing: border-box;}
-hr {display: none;} /* rimuove l'elemento */
+
+@media screen and (min-width: 1150px){
+    body{
+        margin-left: 5em;
+        margin-right: 5em;
+        line-height: 1.8;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    display: none;
+}
+
+/* rimuove l'elemento */
 
 /* HEADER */
 header {
-    background: rgb(0,160,198);
-    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    background: rgb(0, 160, 198);
+    background: linear-gradient(180deg,
+            rgba(0, 160, 198, 1) 0%,
+            rgba(3, 109, 134, 1) 68%);
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -23,22 +44,70 @@ header {
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
 }
+
+@media screen and (min-width: 1150px) {
+    header {
+        text-align: left;
+    }
+
+    header .logo,
+    header nav,
+    header .logo p {
+        display: inline-block;
+    }
+
+    header .logo {
+        width: 70%;
+    }
+
+    header .logo img {
+        vertical-align: middle;
+    }
+
+    header .logo p {
+        margin-bottom: 0;
+    }
+
+    header nav{
+        padding-left: 4em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    aside div {
+        display: inline-block;
+        width: 33%;
+        margin-inline: -2px;
+    }
+}
+
 header div img {
     margin-bottom: 20px;
 }
+
 header nav ul {
     margin: 0;
 }
+
 header nav li {
     list-style: none;
 }
+
+@media screen and (min-width: 750px) {
+    header nav li {
+        display: inline;
+    }
+}
+
 header nav li a {
     color: white;
     text-decoration: none;
 }
+
 header nav li a:hover {
     color: red;
 }
+
 header nav li a::before {
     content: "\22c6\0020";
 }
@@ -48,13 +117,15 @@ main {
     background-color: #fff;
     box-shadow: 0 3px 3px #444;
     padding: 2em 1em;
-    margin-bottom:1.5em ;
+    margin-bottom: 1.5em;
 }
-section { 
+
+section {
     background-color: #e3e3e3;
     padding: 1em;
     margin-bottom: 2em;
 }
+
 section h2 {
     text-align: center;
     color: #333;
@@ -64,46 +135,114 @@ section h2 {
     margin-bottom: 1em;
 }
 
-#logoHtml{
-border: 4px solid rgb(124, 0, 173);
-display: inline-flex;
+#logoHtml {
+    border: 4px solid rgb(124, 0, 173);
+    display: inline-flex;
 }
 
-#logoHtml img{
-padding: 0.1em;
-border: solid 3px rgb(0, 191, 255); 
-text-align: center;
+#logoHtml img {
+    padding: 0.2em;
+    border: solid 3px rgb(0, 191, 255);
+    text-align: center;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+@media screen and (min-width: 750px) {
+    main {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
 h1 {
     font-size: 2.6rem;
     font-weight: bold;
     letter-spacing: -0.03em;
     margin-bottom: 0.7em;
 }
-p, address, ul, ol, dl, blockquote {
+
+@media screen and (min-width: 750px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+p,
+address,
+ul,
+ol,
+dl,
+blockquote {
     margin-bottom: 1.2em;
 }
-h1 + p {
+
+@media screen and (min-width: 750px) {
+
+    p,
+    ul,
+    ol {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+    p,
+    ul,
+    ol {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+
+@media screen and (min-width: 750px) {
+    #tabella {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+h1+p {
     color: #a0a0a0;
 }
-ul, ol {
+
+ul,
+ol {
     margin-left: 2em;
 }
+
 a {
-    color: #00A0C6;
+    color: #00a0c6;
     font-weight: bold;
 }
+
 strong {
     color: #a02571;
     font-weight: bold;
 }
+
 code {
     background-color: #e3e3e3;
     border: 1px solid #969494;
     border-radius: 5px;
 }
+
 iframe {
     width: 100%;
     height: auto;
@@ -111,23 +250,52 @@ iframe {
     border-radius: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+
+    iframe,
+    section {
+        display: inline-block;
+        width: 50%;
+        margin-inline: -2px;
+        vertical-align: middle;
+        height: 15em;
+    }
+
+    section {
+        border-radius: 20px;
+    }
+}
+
 /* TABELLE */
 table {
     margin-bottom: 2em;
 }
+
+@media screen and (min-width: 700px) {
+    table {
+        width: 75%;
+        margin-block-start: 6rem;
+        margin-block-end: 7rem;
+    }
+}
+
 caption {
     font-weight: bold;
     font-style: italic;
 }
+
 thead tr {
     background-color: #3f6bca;
     color: #ffffff;
 }
-th, td {
+
+th,
+td {
     padding: 12px 15px;
     vertical-align: bottom;
     text-align: center;
 }
+
 tbody tr {
     border-bottom: 1px solid #dddddd;
 }
@@ -146,6 +314,7 @@ input {
     border: 0;
     border-bottom: 1px dashed #333;
 }
+
 button {
     padding: 4px 7px;
     background-color: #3f6bca;
@@ -163,29 +332,81 @@ aside h2 {
     text-transform: uppercase;
     margin-bottom: 1em;
 }
+
 aside div {
     background-color: #e3e3e3;
     border: 1px solid #c3c3c3;
     margin-bottom: 1em;
     padding: 1em;
 }
+
 aside div p:last-child {
     margin-bottom: 0;
     font-size: 0.8em;
     text-align: right;
 }
 
-
 /* FOOTER */
 footer {
-    background: rgb(53,53,53);
-    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    background: rgb(53, 53, 53);
+    background: linear-gradient(0deg,
+            rgba(53, 53, 53, 1) 0%,
+            rgba(5, 85, 103, 1) 68%);
     box-shadow: 0 3px 3px #444;
     color: #f0f0f0;
     padding: 1em;
     text-align: center;
     font-size: 1.2rem;
 }
+
 footer a {
     color: fuchsia;
+}
+
+@media screen and (min-width: 750px) {
+    footer {
+        font-size: 1.5rem;
+        padding: 1em 6em;
+
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    footer {
+        font-size: 2rem;
+        padding: 1em 10em;
+    }
+}
+
+
+
+@media print {
+    body {
+        font-size: 24px;
+        padding: 0;
+        background-image: none;
+    }
+
+    main {
+        box-shadow: none;
+        margin: 0;
+    }
+
+    thead tr {
+        background-color: #d3d3d3;
+        color: black;
+    }
+
+    thead tr,
+    tbody tr {
+        border-bottom: 1px solid #666;
+    }
+
+    header,
+    article section,
+    iframe,
+    aside,
+    footer {
+        display: none;
+    }
 }
