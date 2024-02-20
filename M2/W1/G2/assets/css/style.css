@@ -101,7 +101,6 @@ section {
   background-color: #e3e3e3;
   padding: 1.5em 1em;
   margin-bottom: 2em;
-  position: relative;
 }
 
 section h2 {
@@ -386,4 +385,101 @@ footer a {
   .toTop {
     display: none;
   }
+}
+
+
+
+/*mio*/
+
+
+@media screen and (min-width: 425px) {
+  .lineaAbs{
+    position: relative;
+    width: 550px;
+    bottom: 3em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .lineaAbs{
+    position: relative;
+    left: 30em;
+    width: 490px;
+    bottom: 3em;
+  }
+}
+
+
+  .news{
+    position: absolute;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: -60px;
+    border-radius: 5px;
+  }
+
+
+  @media screen and (min-width: 425px) {
+    #sideButtons{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 45em;
+    }
+    
+    #sideButtons a{
+      background-color: #e3e3e3cc;
+      margin-bottom: 25px;
+    }
+  
+    .buttons{
+      width: 50px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    #sideButtons {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 90em;
+  }
+
+  #sideButtons a:last-child {
+      position: absolute;
+      top:35em;
+  }
+
+  #sideButtons a {
+      background-color: #e3e3e3cc;
+      border-radius: 10%;
+      margin-bottom: 25px;
+  }
+
+  .buttons {
+      width: 60px;
+  }
+}
+@media screen and (min-width: 1026px) {
+  #sideButtons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 90em;
+}
+
+#sideButtons a:last-child {
+    position: absolute;
+    top:35em;
+}
+
+#sideButtons a {
+    background-color: #e3e3e3cc;
+    border-radius: 10%;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    width: 60px;
+}
 }
