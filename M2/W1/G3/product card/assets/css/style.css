@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    color: #752305;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    width: max-content;
+    border-radius: 70px;
+    background-color: #fef7e2;
+}
+
+.product-card img {
+    width: 300px;
+    border-radius: 70px 70px 0 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.info h2 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.info button {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #f0c14b;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
