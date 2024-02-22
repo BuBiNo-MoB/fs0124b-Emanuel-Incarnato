@@ -66,5 +66,5 @@
 }
 
 @keyframes moveit {
-    from {transform: scale(100,100) rotate(30deg);} 
+    from {transform: scale(25,25) rotate(190deg);} 
 }
