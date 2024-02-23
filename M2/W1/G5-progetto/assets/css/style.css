@@ -193,25 +193,30 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
 }
 
-.link-article img {
+.link-article img{
     width: 200px;
     height: 150px;
     object-fit: cover;
 }
 
-.link-article h3 {
+.link-article h3{
     font-weight: bold;
-    font-size: larger;
+    font-size: x-large;
 }
 
-.link-article p,
-span {
-    font-size: normal;
+.link-article p{
+    font-size: large;
     color: #999999;
     line-height: 25px;
+    margin-top: 2px;
+}
+
+.link-article span{
+    font-size: small;
+    margin-top: 2px;
+    color: #999999;
 }
 
 
