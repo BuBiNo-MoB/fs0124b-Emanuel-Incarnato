@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,400;0,700;1,400;1,700;1,900&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,800&display=swap');
+
+/*tutto per header*/
+
+header {
+    background-color: #FFC017;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+    border-bottom: 1px solid;
+    transition: background-color 0.5s;
+}
+
+
+.logo {
+    font-size: 24px;
+    margin-left: 3em;
+    padding: 8px;
+}
+
+nav {
+    margin-right: 10em;
+    padding: 8px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.sign-in {
+    border-bottom: 2px solid black;
+}
+
+header button {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+
+
+
+
+/*tutto per il main*/
+
+.yellow-container {
+    width: 100%;
+    background-color: #FFC017;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Spectral", serif;
+    border-bottom: 1px solid;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: left;
+    margin-left: 7em;
+}
+
+.text h1 {
+    font-size: 7rem;
+    font-weight: 500;
+    font-family: "Spectral", serif;
+    margin-bottom: 50px;
+
+}
+
+.text p {
+    font-size: 1.5rem;
+
+}
+
+.text button {
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 3em;
+}
+
+.patternMMM {
+    margin-left: 17em;
+}
+
+
+
+/*Main dopo il giallo*/
+.white-container {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.number {
+    font-size: 34px;
+    font-weight: bold;
+    color: #12121238;
+    float: left;
+    margin-right: 30px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 3.6em;
+}
+
+.author {
+    font-size: 20px;
+    margin-bottom: 0.4em;
+}
+
+.user-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: -19px;
+    padding-right: 3px;
+}
+
+.date {
+    font-size: 15px;
+    color: #999999;
+    margin-top: 3px;
+    margin-left: 4.3em;
+}
+
+.star {
+    width: 16px;
+    height: 16px;
+}
+
+.scritta-unica h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #121212;
+    margin-left: 20em;
+    margin-top: 2em;
+    margin-bottom: 0.3em;
+    display: flex;
+    align-items: center;
+}
+
+.trend-article {
+    margin-bottom: 2em;
+    padding: 1.6em;
+}
+
+
+/*SEZIONE ARTICOLI*/
+hr {
+    margin-bottom: 75px;
+}
+
+.article-division{
+    display:flex;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.article-division img{
+    width: 150px;
+}
+
+#article-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-family: "Roboto", sans-serif;
+    padding-left: 4em;
+    gap: 2em;
+}
+
+.link-article {
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.link-article img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.link-article h3 {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.link-article p,
+span {
+    font-size: normal;
+    color: #999999;
+    line-height: 25px;
+}
+
+
+
+
+/*FOOTER*/
+
+footer {
+    font-family: "Roboto", sans-serif;
+    width: 30%;
+    margin-left: 10em;
+}
+footer h4{
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tags button {
+    border: none;
+    background-color: #d2cfcf90;
+    color: #121212;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.tags button:hover {
+    text-decoration: underline;
+}
+
+.topics a {
+    color: hsl(92, 87%, 45%);
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: center;
+}
+.topics a:hover{
+    text-decoration: underline;
+}
+
+.topics a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.links a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+.super-container{
+    display: flex;
+}
+
+
+
+/*per javascript*/
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.sticky2 {
+    position: fixed;
+    top: 80px;
+    right:100px;
+    margin-top: 20px;
+}
+
+.changeColor{
+    background-color: white;
+}
