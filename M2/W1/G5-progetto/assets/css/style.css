@@ -106,44 +106,45 @@ header button {
     justify-content: space-between;
 }
 
+.trend-article {
+    width: calc((100% - 60px) / 3);
+    margin-bottom: 2em;
+}
 
 .number {
     font-size: 34px;
     font-weight: bold;
     color: #12121238;
-    float: left;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .title {
     font-size: 18px;
     font-weight: bold;
-    margin-left: 3.6em;
+    margin-top: 0;
 }
 
 .author {
     font-size: 20px;
-    margin-bottom: 2px;
     margin-top: 5px;
 }
 
 .user-icon {
     width: 16px;
     height: 16px;
-    margin-left: -19px;
-    padding-right: 3px;
+    margin-right: 5px;
 }
 
 .date {
     font-size: 15px;
     color: #999999;
     margin-top: 3px;
-    margin-left: 4.3em;
 }
 
 .star {
     width: 16px;
     height: 16px;
+    margin-left: 5px;
 }
 
 .scritta-unica h2 {
@@ -155,11 +156,7 @@ header button {
     margin-bottom: 0.8em;
 }
 
-.trend-article {
-    margin-bottom: 2em;
-}
-
-.scritta-unica img{
+.scritta-unica img {
     vertical-align: text-bottom;
 }
 
@@ -172,11 +169,13 @@ hr {
 .article-division{
     display:flex;
     align-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    line-height: 30px;
+    padding-left: 8em;
 }
 
 .article-division img{
-    width: 150px;
+    width: 200px;
 }
 
 #article-container {
@@ -204,11 +203,11 @@ hr {
 
 .link-article h3{
     font-weight: bold;
-    font-size: x-large;
+    font-size: 22px;
 }
 
 .link-article p{
-    font-size: large;
+    font-size: normal;
     color: #686868;
     line-height: 25px;
     margin-top: 2px;
@@ -242,7 +241,6 @@ footer {
     margin-left: 10em;
 }
 footer h4{
-    margin: 0 auto;
     font-size: 20px;
     font-weight: 400;
     padding-bottom: 10px;
@@ -251,12 +249,15 @@ footer h4{
 .topics {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.259);
+    padding-bottom: 35px;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
 }
 
@@ -264,9 +265,10 @@ footer h4{
     border: none;
     background-color: #d2cfcf90;
     color: #121212;
-    padding: 10px;
+    padding: 12px;
     border-radius: 25px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .tags button:hover {
@@ -276,7 +278,7 @@ footer h4{
 .topics a {
     color: hsl(92, 87%, 45%);
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 25px;
     text-align: center;
 }
 .topics a:hover{
@@ -293,7 +295,7 @@ footer h4{
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .links a {
