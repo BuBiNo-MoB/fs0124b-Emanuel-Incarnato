@@ -52,7 +52,7 @@ let sticky = footer.offsetTop;
 window.addEventListener("scroll", function () {
     let scrollY = window.scrollY;
 
-    if (scrollY > 945.6799926757812) {
+    if (scrollY > 909.6799926757812) {
         footer.classList.add("sticky2");
     } else {
         footer.classList.remove("sticky2");

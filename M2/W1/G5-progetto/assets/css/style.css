@@ -116,12 +116,14 @@ header button {
     font-weight: bold;
     color: #12121238;
     margin-right: 10px;
+    float: left;
 }
 
 .title {
     font-size: 18px;
     font-weight: bold;
     margin-top: 0;
+    padding-left: 44px;
 }
 
 .author {
@@ -139,6 +141,7 @@ header button {
     font-size: 15px;
     color: #999999;
     margin-top: 3px;
+    padding-left: 44px;
 }
 
 .star {
@@ -238,7 +241,7 @@ hr {
 footer {
     font-family: "Roboto", sans-serif;
     width: 30%;
-    margin-left: 10em;
+    margin-left: 8.8em;
 }
 footer h4{
     font-size: 20px;
