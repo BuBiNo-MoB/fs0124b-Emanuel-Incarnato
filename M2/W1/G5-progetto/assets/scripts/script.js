@@ -1,3 +1,5 @@
+/*PER L'HEADER*/
+
 window.addEventListener("DOMContentLoaded", function () {
 
     let header = document.getElementById("header");
@@ -31,8 +33,18 @@ window.addEventListener("scroll", function () {
     }
 });
 
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 475.67999267578125) {
+        header.classList.remove("fade");
+    } else {
+        header.classList.add("fade");
+    }
+});
 
 
+
+
+/*PER IL FOOTER*/
 
 let footer = document.querySelector("footer");
 let sticky = footer.offsetTop;
@@ -40,18 +52,9 @@ let sticky = footer.offsetTop;
 window.addEventListener("scroll", function () {
     let scrollY = window.scrollY;
 
-    if (scrollY > 935.6799926757812) {
+    if (scrollY > 880.6799926757812) {
         footer.classList.add("sticky2");
     } else {
         footer.classList.remove("sticky2");
-    }
-});
-
-
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 475.67999267578125) {
-      header.classList.remove("fade"); // Rimuovi la classe per mostrare il bianco
-    } else {
-      header.classList.add("fade"); // Aggiungi la classe per mostrare il giallo
     }
 });
