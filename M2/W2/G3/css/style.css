@@ -58,6 +58,75 @@ table {
   padding: 3rem;
 }
 
+.button-1 {
+  background-color: #0e6cff;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-2 {
+  background-color: #ff8700;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-3 {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#hero {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 2s, transform 2s;
+  animation: slowlydown 2s ease-out forwards;
+}
+
+@keyframes slowlydown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.button-1,
+.button-2,
+.button-3 {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  transition: transform 0.5s ease;
+}
+
+.button-1:hover,
+.button-2:hover,
+.button-3:hover {
+  transform: scale(1.1);
+}
+
+nav li a:hover {
+  color: #ff0000;
+}
+
 header {
   display: flex;
   justify-content: space-between;

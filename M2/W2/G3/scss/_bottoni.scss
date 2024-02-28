@@ -1,0 +1,22 @@
+@import "colori"; 
+
+$colorbtns: (
+    $colorbtn1,
+    $colorbtn2,
+    $colorbtn3
+);
+
+@for $i from 1 through length($colorbtns) {
+    $color: nth($colorbtns, $i);
+
+    .button-#{$i} {
+        background-color: $color;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 5px;
+        margin-top: 30px;
+        margin-right: 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
