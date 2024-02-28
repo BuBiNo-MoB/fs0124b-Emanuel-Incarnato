@@ -6,3 +6,61 @@
 @import 'genericmixins';
 @import 'animazioni';
 
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: $headerbg;
+    padding: $padding;
+}
+
+header p{
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.menu li{
+    display: inline;
+    margin-right: 1em;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+#hero{
+    background-color: #640fc5;
+}
+
+.heroright img{
+    box-shadow: 10px 10px 50px;
+    position: relative;
+    top: 120px;
+    left: 40px;
+}
+
+.heroleft{
+    width: 50%;
+}
+
+.heroleft h1,p{
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+}
+
+.heroleft h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.carousel{
+    padding: $padding;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+.carousel img{
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px;
+}
