@@ -1,11 +1,23 @@
 @import "fonts";
 @import "misure";
 
+body{
+    font-family: "Inter";
+}
+
 .navbar-nav .nav-link,
 .navbar-nav .dropdown-item {
     color: black;
 }
 
 #heroSection{
+    @include standardpadding;
+}
+
+#subHero>div{
+    @include standardpadding;
+}
+
+#mainSection{
     @include standardpadding;
 }

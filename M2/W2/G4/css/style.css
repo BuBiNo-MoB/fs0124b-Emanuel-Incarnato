@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+  font-family: "Inter";
+}
+
 .navbar-nav .nav-link,
 .navbar-nav .dropdown-item {
   color: black;
 }
 
 #heroSection {
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 10em;
+}
+
+#subHero > div {
+  padding-left: 10em;
+}
+
+#mainSection {
+  padding-left: 10em;
 }
 
 /*# sourceMappingURL=style.css.map */
