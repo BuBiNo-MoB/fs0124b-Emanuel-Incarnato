@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-item {
+  color: black;
+}
+
+#heroSection {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+/*# sourceMappingURL=style.css.map */

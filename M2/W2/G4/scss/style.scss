@@ -1,0 +1,11 @@
+@import "fonts";
+@import "misure";
+
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-item {
+    color: black;
+}
+
+#heroSection{
+    @include standardpadding;
+}
