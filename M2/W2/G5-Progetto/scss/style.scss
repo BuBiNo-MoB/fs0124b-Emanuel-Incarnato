@@ -1,16 +1,23 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "profilepage";
 
-body{
+body {
     background-color: #141414;
 }
 
-#genres{
+#genres {
     background-color: #141414;
     color: white;
     border: 1px solid white;
 }
 
-#social{
+#social {
     font-size: 1.5rem;
+}
+
+.lightButton{
+transition: transform 0.8s ease;
+}
+
+.lightButton:hover{
+    transform: scale(1.1);
 }
