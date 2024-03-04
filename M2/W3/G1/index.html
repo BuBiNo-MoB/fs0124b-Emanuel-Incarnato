@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="pet">
+        <label for="petName">Nome dell'animale:</label><br>
+        <input type="text" id="petName" name="petName"><br>
+
+        <label for="ownerName">Nome del proprietario:</label><br>
+        <input type="text" id="ownerName" name="ownerName"><br>
+
+        <label for="species">Specie:</label><br>
+        <input type="text" id="species" name="species"><br>
+
+        <label for="breed">Razza:</label><br>
+        <input type="text" id="breed" name="breed"><br>
+
+        <button type="submit">Invia Dati!</button>
+    </form>
+
+    <ul id="petList"></ul>
+
+
+    <script>
+        class Pet {
+            constructor(petName, ownerName, species, breed) {
+                this.petName = petName;
+                this.ownerName = ownerName;
+                this.species = species;
+                this.breed = breed;
+            }
+
+            sameOwner(otherPet) {
+                return this.ownerName === otherPet.ownerName;
+            }
+            compareOwner(otherOwner) {
+                if (this.ownerName === otherOwner.ownerName) {
+                    return `${this.petName} hanno lo stesso proprietario ${otherOwner.petName}`;
+                } else if (this.ownerName != otherOwner.ownerName) {
+                    return `${this.petName} hanno proprietari diversi ${otherOwner.petName}`;
+                }
+            }
+        }
+
+        const pet = document.getElementById('pet');
+        const petList = document.getElementById('petList');
+
+        pet.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const petName = document.getElementById('petName').value;
+            const ownerName = document.getElementById('ownerName').value;
+            const species = document.getElementById('species').value;
+            const breed = document.getElementById('breed').value;
+
+            const newPet = new Pet(petName, ownerName, species, breed);
+            addPetToList(newPet);
+            pet.reset();
+        }); 
+
+        function addPetToList(pet) {
+            const listItem = document.createElement('li');
+            listItem.textContent = `Pet Name: ${pet.petName}, Owner Name: ${pet.ownerName}, Species: ${pet.species}, Breed: ${pet.breed}`;
+            petList.appendChild(listItem);
+        }
+
+    </script>
+
+
+
+    <script>
+        class User {
+            constructor(firstName, lastName, age, location) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+                this.location = location;
+            }
+            compare(otherUser) {
+                if (this.age > otherUser.age) {
+                    return `${this.firstName} è più vecchio di ${otherUser.firstName}`;
+                } else if (this.age < otherUser.age) {
+                    return `${this.firstName} è più giovane di ${otherUser.firstName}`;
+                } else {
+                    return `${this.firstName} ha la stessa età di ${otherUser.firstName}`;
+                }
+            }
+        }
+        const user1 = new User("Emanuel", "Incarnato", 33, "Esperia");
+        const user2 = new User("Donato", "Franzese", 28, "SblindolCity");
+        const user3 = new User("Carmine", "Gatti", 33, "Esperia");
+
+        console.log(user1.compare(user2))
+        console.log(user2.compare(user1))
+        console.log(user1.compare(user3))
+
+    </script>
+
+</body>
+
+</html>
