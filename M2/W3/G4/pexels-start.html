@@ -366,20 +366,22 @@
     chiamata('nature').then(nature => {
       console.log(nature)
       let btnLoad = document.getElementById("my1")
-      btnLoad.addEventListener("click", function(){
+      btnLoad.addEventListener("click", function () {
         let image = document.querySelectorAll(".card-img-top")
         nature.photos.forEach((photo, i) => {
-          image[i].src = photo.src.portrait})
+          image[i].src = photo.src.portrait
+        })
       })
     })
 
     chiamata('ocean').then(ocean => {
       console.log(ocean)
       let btnLoad = document.getElementById("my2")
-      btnLoad.addEventListener("click", function(){
+      btnLoad.addEventListener("click", function () {
         let image = document.querySelectorAll(".card-img-top")
         ocean.photos.forEach((photo, i) => {
-          image[i].src = photo.src.portrait})
+          image[i].src = photo.src.portrait
+        })
       })
     })
 
