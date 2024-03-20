@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { iArticle } from './Models/article';
+import { iJson } from './Models/cont-json';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +11,16 @@ export class AppComponent {
   title = 'Esercizio-M3-W1-G3';
 
   articleArr:iArticle[] = [];
+article: any;
+posts: any;
 
   ngOnInit(){
 
     fetch('../assets/db.json')
     .then(articles => articles.json())
-    .then((articles:iArticle[]) => this.articleArr = articles)
-  }
+    .then((articles:iJson) => {
+
+      this.articleArr = articles.posts
+    }
+  )}
 }

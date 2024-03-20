@@ -3,6 +3,6 @@ export interface iArticle {
   title:string
   body:string
   userid:number
-  tags:[string]
+  tags:string[]
   active:boolean
 }
