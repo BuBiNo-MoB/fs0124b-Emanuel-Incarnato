@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'Esercizio-M3-W1-G3';
 
   articleArr:iArticle[] = [];
+  articleRandom:iArticle[] = [];
 article: any;
 posts: any;
 
@@ -21,6 +22,15 @@ posts: any;
     .then((articles:iJson) => {
 
       this.articleArr = articles.posts
+      this.getRandomposts(6)
     }
-  )}
+  )
+}
+
+  getRandomposts(n:number){
+    for (let i = 0; i < n; i++) {
+      let random = Math.floor(Math.random() * this.articleArr.length)
+      this.articleRandom.push(this.articleArr[random])
+    }
+  }
 }
