@@ -15,6 +15,6 @@ export class AppComponent {
 
     fetch('../assets/db.json')
     .then(articles => articles.json())
-    .then ((articles:iArticle[]) => this.articleArr = articles)
+    .then((articles:iArticle[]) => this.articleArr = articles)
   }
 }

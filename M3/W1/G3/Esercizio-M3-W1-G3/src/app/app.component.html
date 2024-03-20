@@ -1,8 +1,19 @@
 <app-navbar></app-navbar>
 
-<app-home></app-home>
-
-<app-active-post></app-active-post>
-<app-inactive-post></app-inactive-post>
-<app-post-detail></app-post-detail>
+<div class="container pb-3">
+  <div class="d-grid gap-3" style="grid-template-columns: 2fr 2fr;">
+    <table class="border rounded-3">
+      <tbody>
+        <tr *ngFor="let article of articleArr">
+          <td>{{article.id}}</td>
+          <td>{{article.title}}</td>
+          <td>{{article.body}}</td>
+          <td>{{article.userid}}</td>
+          <td>{{article.tags}}</td>
+          <td>{{article.active}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
