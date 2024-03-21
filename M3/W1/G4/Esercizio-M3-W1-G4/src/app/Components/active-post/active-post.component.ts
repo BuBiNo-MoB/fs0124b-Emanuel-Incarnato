@@ -10,17 +10,16 @@ import { iJson } from '../../Models/cont-json';
 })
 export class ActivePostComponent {
   articleArr: iArticle[] = [];
-  articleRandom: iArticle[] = [];
+
+  constructor(private articlesSvc:PostsService){}
+
 
   ngOnInit() {
 
-    fetch('../assets/db.json')
-      .then(articles => articles.json())
-      .then((articles: iJson) => {
+    this.articlesSvc.getActivePosts().then(articles => {
 
-        this.articleArr = articles.posts
-        this.articleArr = this.articleArr.filter(p => p.active)
-      }
-      )
+      this.articleArr = articles;
+
+    })
   }
 }

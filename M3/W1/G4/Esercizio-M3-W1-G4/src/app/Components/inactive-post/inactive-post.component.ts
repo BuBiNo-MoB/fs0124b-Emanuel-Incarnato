@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { iArticle } from '../../Models/article';
 import { iJson } from '../../Models/cont-json';
+import { PostsService } from '../../posts.service';
 
 @Component({
   selector: 'app-inactive-post',
@@ -9,17 +10,16 @@ import { iJson } from '../../Models/cont-json';
 })
 export class InactivePostComponent {
   articleArr: iArticle[] = [];
-  articleRandom: iArticle[] = [];
+
+  constructor(private articlesSvc:PostsService){}
+
 
   ngOnInit() {
 
-    fetch('../assets/db.json')
-      .then(articles => articles.json())
-      .then((articles: iJson) => {
+    this.articlesSvc.getInactivePosts().then(articles => {
 
-        this.articleArr = articles.posts
-        this.articleArr = this.articleArr.filter(p => !p.active)
-      }
-      )
+      this.articleArr = articles;
+
+    })
   }
 }

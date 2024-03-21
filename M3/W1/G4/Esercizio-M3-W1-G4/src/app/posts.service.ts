@@ -11,7 +11,7 @@ export class PostsService {
 
     return fetch ('../assets/db.json')
     .then(article => article.json())
-    .then((article:iArticle[]) => article)
+    .then((article:iJson) => article.posts)
   }
 
   getActivePosts():Promise<iArticle[]>{
