@@ -6,4 +6,3 @@ export interface iJson {
   skip: number
   limit: number
 }
-

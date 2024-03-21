@@ -10,24 +10,24 @@ import { iJson } from './Models/cont-json';
 export class AppComponent {
   title = 'Esercizio-M3-W1-G3';
 
-  articleArr:iArticle[] = [];
-  articleRandom:iArticle[] = [];
-article: any;
-posts: any;
+  articleArr: iArticle[] = [];
+  articleRandom: iArticle[] = [];
+  article: any;
+  posts: any;
 
-  ngOnInit(){
+  ngOnInit() {
 
     fetch('../assets/db.json')
-    .then(articles => articles.json())
-    .then((articles:iJson) => {
+      .then(articles => articles.json())
+      .then((articles: iJson) => {
 
-      this.articleArr = articles.posts
-      this.getRandomposts(6)
-    }
-  )
-}
+        this.articleArr = articles.posts
+        this.getRandomposts(3)
+      }
+      )
+  }
 
-  getRandomposts(n:number){
+  getRandomposts(n: number) {
     for (let i = 0; i < n; i++) {
       let random = Math.floor(Math.random() * this.articleArr.length)
       this.articleRandom.push(this.articleArr[random])

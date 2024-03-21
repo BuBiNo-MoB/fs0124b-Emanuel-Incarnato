@@ -8,6 +8,7 @@ import { InactivePostComponent } from './Components/inactive-post/inactive-post.
 import { PostDetailComponent } from './Components/post-detail/post-detail.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { HomeComponent } from './Components/home/home.component';
+import { Page404Component } from './Components/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './Components/home/home.component';
     InactivePostComponent,
     PostDetailComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
