@@ -10,8 +10,6 @@ import { iJson } from '../../Models/cont-json';
 export class HomeComponent {
   articleArr: iArticle[] = [];
   articleRandom: iArticle[] = [];
-  article: any;
-  posts: any;
 
   ngOnInit() {
 
