@@ -1,6 +1,7 @@
-import { iJson } from '../../Models/cont-json';
-import { iArticle } from './../../Models/article';
 import { Component } from '@angular/core';
+import { iArticle } from '../../Models/article';
+import { PostsService } from '../../posts.service';
+import { iJson } from '../../Models/cont-json';
 
 @Component({
   selector: 'app-active-post',
@@ -8,16 +9,18 @@ import { Component } from '@angular/core';
   styleUrl: './active-post.component.scss'
 })
 export class ActivePostComponent {
-  articleArr : iArticle[] = [];
+  articleArr: iArticle[] = [];
+  articleRandom: iArticle[] = [];
 
-  ngOnInit(){
+  ngOnInit() {
 
-    fetch('../../../assets/db.json')
+    fetch('../assets/db.json')
       .then(articles => articles.json())
-      .then((articles:iJson) =>{
+      .then((articles: iJson) => {
 
-
-
-      })
+        this.articleArr = articles.posts
+        this.articleArr = this.articleArr.filter(p => p.active)
+      }
+      )
   }
 }

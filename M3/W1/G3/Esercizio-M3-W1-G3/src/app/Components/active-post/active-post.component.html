@@ -1,1 +1,18 @@
-
+<div class="container-fluid">
+  <div class="text-center mb-2">
+    <h1>
+      Sblindolo's Posts
+    </h1>
+  </div>
+  <div class="row">
+    <div class="col-4 mb-3" *ngFor="let articles of articleArr">
+      <div class="card text-center">
+        <div class="card-header text-primary">Article</div>
+        <div class="card-body">
+          <h5 class="card-title">{{articles.title}}</h5>
+          <p class="card-text">{{articles.body}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
