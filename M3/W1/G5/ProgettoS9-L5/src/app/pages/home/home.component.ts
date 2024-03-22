@@ -11,25 +11,22 @@ export class HomeComponent {
   rndCars: iCars[] = [];
   logos: string[] = [];
 
-  ngOnInit(){
+  ngOnInit() {
     this.fetchCarsData();
   }
 
   fetchCarsData() {
     fetch('../../../assets/db.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Failed to fetch data');
-      }
-      return response.json();
-    })
-    .then((data: iCars[]) => {
-      this.cars = data;
-      this.getRandomCars(2);
-    })
-    .catch(error => {
-      console.error('Error fetching data:', error);
-    });
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        return response.json();
+      })
+      .then((data: iCars[]) => {
+        this.cars = data;
+        this.getRandomCars(2);
+      })
   }
 
   getRandomCars(n: number) {

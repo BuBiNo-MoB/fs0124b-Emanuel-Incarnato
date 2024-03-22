@@ -3,7 +3,9 @@
     <div class="col-2"></div>
     <div class="col-8">
       <h1 class="text-danger">La scelta giusta per la tua nuova Auto</h1>
-      <img src="../../../assets/imgs/kisspng-the-mp-car-group-car-dealership-vehicle-auto-detai-car-logo-5acc63ad77f7c6.9011992615233443014914.png" alt="logo" width="200px">
+      <img
+        src="../../../assets/imgs/kisspng-the-mp-car-group-car-dealership-vehicle-auto-detai-car-logo-5acc63ad77f7c6.9011992615233443014914.png"
+        alt="logo" width="200px">
       <h3>I nostri marchi:</h3>
       <div class="row border-bottom pb-3">
         <div class="col-sm-4">
@@ -19,11 +21,11 @@
       <div>
         <h4 class="text-center mt-4">Auto in evidenza:</h4>
         <div class="row">
-          <div class="col-6" *ngFor="let cars of rndCars">
-            <div class="card">
+          <div class="col-sm-6 mb-3" *ngFor="let cars of rndCars">
+            <div class="card" [ngClass]="{'bg-success': cars.available,'bg-danger': !cars.available}">
               <img src="{{cars.modelImage}}" class="card-img-top" alt="">
               <div class="card-body">
-                <h5 class="card-title">{{cars.brand}}  {{cars.model}}</h5>
+                <h5 class="card-title">{{cars.brand}} {{cars.model}}</h5>
                 <h5 class="card-title">anno:{{cars.year}}</h5>
                 <p class="card-text">{{cars.price | currency : 'EUR'}}</p>
                 <a href="#" class="btn btn-secondary">Vai ai dettagli</a>

@@ -1,1 +1,19 @@
-<p>ford works!</p>
+<div class="container text-center">
+  <h3>Scopri la nostra selezione di veicoli FORD</h3>
+  <img class="mt-2" src="../../../assets/imgs/Ford_Motor_Company_Logo.svg.png" alt="logoFIAT" width="200px">
+  <div class="row">
+    <div class="row mt-4">
+      <div class="col-sm-6" *ngFor="let cars of cars">
+        <div class="card" [ngClass]="{'bg-success': cars.available,'bg-danger': !cars.available}">
+          <img src="{{cars.modelImage}}" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">{{cars.brand}} {{cars.model}}</h5>
+            <h5 class="card-title">anno:{{cars.year}}</h5>
+            <p class="card-text">{{cars.price | currency : 'EUR'}}</p>
+            <a href="#" class="btn btn-secondary">Vai ai dettagli</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
