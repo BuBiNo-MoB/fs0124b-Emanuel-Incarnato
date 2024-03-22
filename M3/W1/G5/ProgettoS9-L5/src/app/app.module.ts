@@ -10,6 +10,7 @@ import { FiatComponent } from './pages/fiat/fiat.component';
 import { AudiComponent } from './pages/audi/audi.component';
 import { FordComponent } from './pages/ford/ford.component';
 import { Page404Component } from './pages/page404/page404.component';
+import { CarDetailsComponent } from './pages/car-details/car-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Page404Component } from './pages/page404/page404.component';
     FiatComponent,
     AudiComponent,
     FordComponent,
-    Page404Component
+    Page404Component,
+    CarDetailsComponent
   ],
   imports: [
     BrowserModule,

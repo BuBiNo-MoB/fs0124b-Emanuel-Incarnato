@@ -5,6 +5,7 @@ import { FiatComponent } from './pages/fiat/fiat.component';
 import { AudiComponent } from './pages/audi/audi.component';
 import { FordComponent } from './pages/ford/ford.component';
 import { Page404Component } from './pages/page404/page404.component';
+import { CarDetailsComponent } from './pages/car-details/car-details.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path:'ford',
     component:FordComponent
+  },
+  {
+    path:'dettagli/:id',
+    component:CarDetailsComponent
   },
   {
     path:'**',

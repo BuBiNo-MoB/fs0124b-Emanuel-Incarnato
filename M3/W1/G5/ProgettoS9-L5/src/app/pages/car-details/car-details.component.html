@@ -1,0 +1,11 @@
+<div class="container text-center d-flex justify-content-center pt-4 pb-4">
+  <div *ngIf="car" class="card" [ngClass]="{'bg-success': car.available, 'bg-danger': !car.available}">
+    <img [src]="car.modelImage" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{ car.brand }} {{ car.model }}</h5>
+      <h5 class="card-title">Anno: {{ car.year }}</h5>
+      <p class="card-text">{{ car.price | currency : 'EUR' }}</p>
+      <a [routerLink]="['/dettagli', car.id]" class="btn btn-secondary">Vai ai dettagli</a>
+    </div>
+  </div>
+</div>
