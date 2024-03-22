@@ -22,7 +22,6 @@ export class CarDetailsComponent implements OnInit {
           const cars: iCars[] = data
           this.car = cars.find(car => car.id === carId);
         })
-        .catch(error => console.error('Error fetching car details:', error));
     });
   }
 }
