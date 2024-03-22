@@ -1,9 +1,8 @@
-<div class="container text-center">
+<div class="container text-center pt-4">
   <h3>Scopri la nostra selezione di veicoli FORD</h3>
   <img class="mt-2" src="../../../assets/imgs/Ford_Motor_Company_Logo.svg.png" alt="logoFIAT" width="200px">
-  <div class="row">
     <div class="row mt-4">
-      <div class="col-sm-6" *ngFor="let cars of cars">
+      <div class="col-sm-6 pb-4" *ngFor="let cars of cars">
         <div class="card" [ngClass]="{'bg-success': cars.available,'bg-danger': !cars.available}">
           <img src="{{cars.modelImage}}" class="card-img-top" alt="">
           <div class="card-body">
@@ -14,6 +13,5 @@
           </div>
         </div>
       </div>
-  </div>
-  </div>
+    </div>
 </div>
