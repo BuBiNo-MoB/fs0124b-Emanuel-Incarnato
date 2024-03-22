@@ -9,7 +9,6 @@ import { iCars } from '../../models/cars';
 export class HomeComponent {
   cars: iCars[] = [];
   rndCars: iCars[] = [];
-  logos: string[] = [];
 
   ngOnInit() {
     this.fetchCarsData();
@@ -18,9 +17,6 @@ export class HomeComponent {
   fetchCarsData() {
     fetch('../../../assets/db.json')
       .then(response => {
-        if (!response.ok) {
-          throw new Error('Failed to fetch data');
-        }
         return response.json();
       })
       .then((data: iCars[]) => {

@@ -8,8 +8,6 @@ import { iCars } from '../../models/cars';
 })
 export class FiatComponent {
   cars: iCars[] = [];
-  rndCars: iCars[] = [];
-  logos: string[] = [];
   brandLogo!: string;
   brand!: string;
 
@@ -25,8 +23,6 @@ export class FiatComponent {
               if (this.cars.length > 0) {
                   this.brandLogo = this.cars[0].brandLogo;
                   this.brand = this.cars[0].brand;
-              } else {
-                  console.error('No Fiat cars.');
               }
           })
   }

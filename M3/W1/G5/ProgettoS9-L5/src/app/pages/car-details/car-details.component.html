@@ -5,7 +5,7 @@
       <h5 class="card-title">{{ car.brand }} {{ car.model }}</h5>
       <h5 class="card-title">Anno: {{ car.year }}</h5>
       <p class="card-text">{{ car.price | currency : 'EUR' }}</p>
-      <a [routerLink]="['/dettagli', car.id]" class="btn btn-secondary">Vai ai dettagli</a>
+      <a [routerLink]="['/dettagli', car.id]" class="btn btn-dark">Vai ai dettagli</a>
     </div>
   </div>
 </div>
