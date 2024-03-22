@@ -12,10 +12,10 @@ export class FiatComponent {
   brand!: string;
 
   ngOnInit(): void {
-      this.getAutos();
+      this.getCars();
   }
 
-  getAutos() {
+  getCars() {
       fetch('../../../assets/db.json')
           .then(response => response.json())
           .then((cars:iCars[]) => {
