@@ -9,6 +9,7 @@ import { PostDetailComponent } from './Components/post-detail/post-detail.compon
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { HomeComponent } from './Components/home/home.component';
 import { Page404Component } from './Components/page404/page404.component';
+import { SinglePostComponent } from './Components/single-post/single-post.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Page404Component } from './Components/page404/page404.component';
     PostDetailComponent,
     NavbarComponent,
     HomeComponent,
-    Page404Component
+    Page404Component,
+    SinglePostComponent
   ],
   imports: [
     BrowserModule,

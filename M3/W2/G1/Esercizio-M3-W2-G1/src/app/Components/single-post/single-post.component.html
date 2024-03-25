@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row mt-4">
+    <h3 class="text-center text-warning">All the Articles</h3>
+    <div class="col-4 mb-3" *ngFor="let articles of articleArr">
+      <div class="card text-center" [ngClass]="{'bg-primary': articles.active}">
+        <div class="card-header text-black">
+          Article
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{articles.title}}</h5>
+          <p class="card-text">{{articles.body}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

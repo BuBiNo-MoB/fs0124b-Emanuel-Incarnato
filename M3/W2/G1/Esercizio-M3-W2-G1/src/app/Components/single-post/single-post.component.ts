@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { iArticle } from '../../Models/article';
-import { iJson } from '../../Models/cont-json';
-import { PostsService } from '../../posts.service';
 
 @Component({
-  selector: 'app-inactive-post',
-  templateUrl: './inactive-post.component.html',
-  styleUrl: './inactive-post.component.scss'
+  selector: 'app-single-post',
+  templateUrl: './single-post.component.html',
+  styleUrl: './single-post.component.scss'
 })
-export class InactivePostComponent {
+export class SinglePostComponent {
   articleArr: iArticle[] = [
     {
       id: 1,
@@ -253,12 +251,12 @@ export class InactivePostComponent {
     },
   ];
 
-
-  active: iArticle[]
+  allArticles: iArticle[]
   constructor() {
-    this.active = this.inactiveArticle;
+    this.allArticles = this.articleArr;
   }
-  get inactiveArticle(): iArticle[] {
-    return this.articleArr.filter((art) => !art.active);
+
+  get articleArray(): iArticle[] {
+    return this.articleArr
   }
-  }
+}
