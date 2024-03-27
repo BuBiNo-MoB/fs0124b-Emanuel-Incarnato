@@ -12,6 +12,10 @@ export class HomeComponent implements OnInit {
 
   productsArr: iProducts[] = [];
 
+  preferiti: iProducts[] = [];
+
+  carrello: iProducts[] = []
+
   constructor(private productSvc: ShopService) {}
 
   ngOnInit() {
@@ -20,5 +24,15 @@ export class HomeComponent implements OnInit {
         this.productsArr = response.products;
         console.log(this.productsArr);
     });
+  }
+
+  addToFavorites(product: iProducts) {
+    this.preferiti.push(product);
+    console.log("Nei preferiti:", this.preferiti)
+  }
+
+  addToCart(product: iProducts) {
+    this.carrello.push(product);
+    console.log("Prodotti nel carrello:", this.carrello);
   }
 }
