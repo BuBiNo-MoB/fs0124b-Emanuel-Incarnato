@@ -7,6 +7,8 @@ import { HeaderComponent } from './mainComponent/header/header.component';
 import { FooterComponent } from './mainComponent/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PreferitiComponent } from './pages/preferiti/preferiti.component';
+import { CarrelloComponent } from './pages/carrello/carrello.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    PreferitiComponent,
+    CarrelloComponent
   ],
   imports: [
     BrowserModule,

@@ -27,8 +27,7 @@ export class HomeComponent implements OnInit {
   }
 
   addToFavorites(product: iProducts) {
-    this.preferiti.push(product);
-    console.log("Nei preferiti:", this.preferiti)
+    this.productSvc.addToFavorites(product);
   }
 
   addToCart(product: iProducts) {

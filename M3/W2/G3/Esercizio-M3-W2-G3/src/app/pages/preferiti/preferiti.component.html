@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Prodotti Preferiti</h1>
+  <div>
+    <div class="card" *ngFor="let products of preferiti">
+      <img [src]="products.thumbnail" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{products.title}}</h5>
+        <p class="card-text">{{products.description}}</p>
+        <p class="card-text">Prezzo: {{products.price | currency : 'EUR'}}</p>
+        <p class="card-text">Rating: {{products.rating}}</p>
+        <p class="card-text">In stock: {{products.stock}}</p>
+      </div>
+    </div>
+  </div>
+  <ng-template #noPreferiti>
+    <p>Nessun prodotto preferito.</p>
+  </ng-template>
+</div>
