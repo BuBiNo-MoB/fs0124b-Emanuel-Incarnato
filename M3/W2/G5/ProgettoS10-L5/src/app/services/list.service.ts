@@ -7,12 +7,7 @@ import { iUsers } from '../models/users';
   providedIn: 'root'
 })
 export class ListService {
-  getAllUsers() {
-    throw new Error('Method not implemented.');
-  }
-  getTasksForUser(id: any) {
-    throw new Error('Method not implemented.');
-  }
+
   list: iList[] = [
     {
       "id": 1,
@@ -918,10 +913,6 @@ export class ListService {
 
   constructor(private userSvc: UsersService) {}
 
-  ngOnInit(): void {
-    this.fillmethod();
-  }
-
   getAll(): iList[] {
     return this.list;
   }
@@ -962,6 +953,4 @@ export class ListService {
   getAllusers(): iUsers[] {
     return this.userSvc.getAll();
   }
-
-
 }

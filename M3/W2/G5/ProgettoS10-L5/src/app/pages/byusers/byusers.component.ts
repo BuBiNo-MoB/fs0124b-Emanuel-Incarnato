@@ -19,10 +19,7 @@ export class ByusersComponent implements OnInit {
 
   ngOnInit(): void {
     this.populateUserTasks();
-    this.route.queryParams.subscribe(params => {
-      this.searchTerm = params['search'];
-      this.filterUserTasks();
-    });
+    ;
   }
 
   async populateUserTasks(): Promise<void> {
@@ -41,23 +38,6 @@ export class ByusersComponent implements OnInit {
       userId: +userId,
       tasks: tasksByUser[+userId]
     }));
-
-    this.filterUserTasks();
-  }
-
-  filterUserTasks(): void {
-    if (!this.searchTerm || this.searchTerm.trim() === '') {
-      this.filteredUserTasks = this.userTasks;
-    } else {
-      const searchTermLC = this.searchTerm.toLowerCase();
-      this.filteredUserTasks = this.userTasks.filter(userTask => {
-        const user = this.userService.getById(userTask.userId); // Modifica qui
-        return (
-          user?.firstName.toLowerCase().includes(searchTermLC) ||
-          user?.lastName.toLowerCase().includes(searchTermLC)
-        );
-      });
-    }
   }
 
   toggleCompletion(itemId: number): void {
