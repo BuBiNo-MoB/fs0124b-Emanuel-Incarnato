@@ -9,6 +9,8 @@ import { CompletedComponent } from './pages/completed/completed.component';
 import { LeftComponent } from './pages/left/left.component';
 import { ByusersComponent } from './pages/byusers/byusers.component';
 import { Page404Component } from './pages/page404/page404.component';
+import { FooterComponent } from './mainComponent/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { Page404Component } from './pages/page404/page404.component';
     CompletedComponent,
     LeftComponent,
     ByusersComponent,
-    Page404Component
+    Page404Component,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

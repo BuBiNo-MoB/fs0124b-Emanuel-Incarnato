@@ -1,1 +1,26 @@
-<p>byusers works!</p>
+<div class="container-fluid">
+  <div *ngFor="let userTask of userTasks">
+    <div class="user-task-container">
+      <div class="row">
+        <div *ngFor="let item of userTask.tasks; let first = first">
+          <div class="col-12  text-center" *ngIf="first">
+            <img [src]="item.user?.image" class="user-image" alt="User Image">
+          </div>
+          <div class=" col-12">
+            <div class="card mb-3">
+              <div class="card-body" [ngStyle]="{'background-color': item.completed ? 'green' : 'red'}">
+                <h5 class="card-title">{{ item.todo }}</h5>
+                <p class="card-text">User: {{ item.user?.firstName }} {{ item.user?.lastName }}</p>
+                <p class="card-text">Completed: {{ item.completed ? 'Yes' : 'No' }}</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" [checked]="item.completed" (change)="toggleCompletion(item.id)">
+                  <label class="form-check-label">Mark as {{ item.completed ? 'Incomplete' : 'Complete' }}</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
