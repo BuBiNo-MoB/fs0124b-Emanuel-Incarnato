@@ -1,4 +1,6 @@
+import { IUser } from './../modules/i-user';
 import { Component } from '@angular/core';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
+  constructor(private authSvc:AuthService){}
+
+  user!:IUser|undefined
+  ngOnInit(){
+
+    this.authSvc.user$.subscribe(user => {
+
+      this.user = user || undefined
+    })
+
+  }
 }

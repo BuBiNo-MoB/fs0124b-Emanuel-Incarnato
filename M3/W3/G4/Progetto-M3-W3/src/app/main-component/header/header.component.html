@@ -1,14 +1,18 @@
 <div class="container-fluid bg-black">
-  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
     <div class="col-md-3 mb-md-0">
       <a routerLink="/" class=" link-body-emphasis text-decoration-none">
-        <img src="../../../assets/images/Blockbuster_logo.svg.png" alt="logo blkbst" width="30%"><span class="fs-4">SblindolBuStEr</span>
+        <img src="../../../assets/images/Blockbuster_logo.svg.png" alt="logo blkbst" width="20%"><span class="fs-4">SblindolBuStEr</span>
       </a>
     </div>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
       <li><a routerLink="/" class="nav-link px-2">Home</a></li>
       <li *ngIf="isUserLoggedIn"><a routerLink="/dashboard" class="nav-link px-2">Dashboard</a></li>
+      <li *ngIf="isUserLoggedIn"><a routerLink="/dashboard/films" class="nav-link px-2">Film</a></li>
+      <li *ngIf="isUserLoggedIn"><a routerLink="/dashboard/users" class="nav-link px-2">Users</a></li>
+      <li *ngIf="isUserLoggedIn"><a routerLink="/dashboard/profile" class="nav-link px-2">Profile</a></li>
+
     </ul>
 
     <div class="col-md-3 text-end">

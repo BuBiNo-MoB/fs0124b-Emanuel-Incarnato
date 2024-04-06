@@ -85,6 +85,25 @@
       "password": "$2a$10$stevZZuH00VaKUpfhPV2TOC1NyO/a2h8NZ/6lZpBqH1FgyXSZNm3.",
       "firstname": "Emanuel",
       "id": 11
+    },
+    {
+      "email": "francescasbarigia@libero.it",
+      "password": "$2a$10$ozWCWi7rWLyfxzndbDymiuRk9lIbN1yhbbO.oqBCtq9xt44TAK7gW",
+      "firstname": "Francesca",
+      "id": 12
+    },
+    {
+      "email": "bubi@no",
+      "password": "$2a$10$uAI6z5xjROqKg3rgm3GisOxMmNnd/6DfgGlC.EkUXCWoJ.A1aITCy",
+      "firstname": "Bubino",
+      "id": 13
+    },
+    {
+      "email": "glauco@ilcaneperfetto",
+      "password": "$2a$10$nPouSH2Ve5FQEFFhn0JeLOCW5XX2ObLQfD2xbNVGRLVq79BW7b1au",
+      "firstname": "Glauco",
+      "age": "7",
+      "id": 14
     }
   ],
   "films": [
@@ -104,7 +123,7 @@
       "id": 3,
       "title": "The Dark Knight",
       "date": "2008",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Batsuit_from_The_Dark_Knight_Rises_film_-_closer_view.jpg/640px-Batsuit_from_The_Dark_Knight_Rises_film_-_closer_view.jpg"
     },
     {
       "id": 4,
@@ -120,9 +139,9 @@
     },
     {
       "id": 6,
-      "title": "The Lord of the Rings: The Return of the King",
-      "date": "2003",
-      "image": "https://upload.wikimedia.org/wikipedia/en/9/9d/Lord_of_the_Rings_-_The_Return_of_the_King.jpg"
+      "title": "The Lord of the Rings: The Two Towers",
+      "date": "2002",
+      "image": "https://image.tmdb.org/t/p/original/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg"
     },
     {
       "id": 7,
@@ -138,9 +157,9 @@
     },
     {
       "id": 9,
-      "title": "Inception",
-      "date": "2010",
-      "image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Inception_ver3.jpg"
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "date": "2001",
+      "image": "https://image.tmdb.org/t/p/original/56zTpe2xvaA4alU51sRWPoKPYZy.jpg"
     },
     {
       "id": 10,
@@ -168,15 +187,15 @@
     },
     {
       "id": 14,
-      "title": "Gladiator",
-      "date": "2000",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/8d/Gladiator_ver1.jpg"
+      "title": "The Lion King",
+      "date": "1994",
+      "image": "https://image.tmdb.org/t/p/original/2CAL2433ZeIihfX1Hb2139CX0pW.jpg"
     },
     {
       "id": 15,
-      "title": "Se7en",
-      "date": "1995",
-      "image": "https://upload.wikimedia.org/wikipedia/en/6/68/Seven_%281995_film%29_poster.jpg"
+      "title": "The Prestige",
+      "date": "2006",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg"
     },
     {
       "id": 16,
@@ -186,9 +205,9 @@
     },
     {
       "id": 17,
-      "title": "The Green Mile",
-      "date": "1999",
-      "image": "https://upload.wikimedia.org/wikipedia/en/c/ce/Green_mile.jpg"
+      "title": "Inglourious Basterds",
+      "date": "2009",
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/c3/Inglourious_Basterds_poster.jpg"
     },
     {
       "id": 18,
@@ -204,9 +223,9 @@
     },
     {
       "id": 20,
-      "title": "American History X",
-      "date": "1998",
-      "image": "https://upload.wikimedia.org/wikipedia/en/0/0a/American_History_X_poster.jpg"
+      "title": "The Revenant",
+      "date": "2015",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/b6/The_Revenant_2015_film_poster.jpg"
     }
   ],
   "favourites": []

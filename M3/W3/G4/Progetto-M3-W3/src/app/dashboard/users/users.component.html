@@ -1,0 +1,15 @@
+<div class="container-fluid" id="main">
+  <h2 class="text-center">Lista utenti</h2>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-4" *ngFor="let user of users">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Utente: {{ user.firstname }} {{ user.lastname }}</h5>
+          <p class="card-text">Email: {{ user.email }}</p>
+          <p class="card-text">Età: {{ user.age }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

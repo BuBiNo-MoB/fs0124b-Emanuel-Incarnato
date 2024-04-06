@@ -39,6 +39,7 @@ export class AuthService {
 
   registerUrl:string = environment.registerUrl
   loginUrl:string = environment.loginUrl
+  apiUrl:string = environment.apiUrl;
 
   register(newUser:Partial<IUser>):Observable<AccessData>{
     return this.http.post<AccessData>(this.registerUrl,newUser)

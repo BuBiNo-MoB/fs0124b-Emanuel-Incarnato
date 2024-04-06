@@ -1,22 +1,38 @@
-<div class="container">
+<div id="main" class="container-fluid">
   <div class="row text-center">
     <div class="col-4"></div>
-    <div class="col-4">
+    <div class="col-12 col-lg-4">
       <h1>Registrati</h1>
-
-      <form>
-
-        <input type="text" name="nome" [(ngModel)]="registerData.firstname" class="form-control text-center" placeholder="nome">
-
-        <input type="email" name="email" [(ngModel)]="registerData.email" class="form-control text-center" placeholder="email">
-
-        <input type="password" name="password" [(ngModel)]="registerData.password" class="form-control text-center"
+      <h2>Inserisci i tuoi dati</h2>
+      <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary mb-4 mt-3">
+        <div class="form-floating mb-3">
+          <input type="text" name="nome" [(ngModel)]="registerData.firstname" class="form-control text-center" placeholder="nome">
+          <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" name="email" [(ngModel)]="registerData.email" class="form-control text-center" placeholder="email">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" name="password" [(ngModel)]="registerData.password" class="form-control text-center"
           placeholder="password">
-
-        <button (click)="signUp()" class="btn btn-success">Registrati</button>
-
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" name="age" [(ngModel)]="registerData.age" class="form-control text-center"
+          placeholder="Età">
+          <label for="floatingPassword">Età</label>
+        </div>
+        <button (click)="signUp()" class="w-50 btn btn-lg btn-success" type="submit">Sign up</button>
+        <hr class="my-4">
+        <small class="text-body-secondary">
+        By clicking Login, you agree to the terms of use of SblindolBuStEr.</small>
       </form>
     </div>
     <div class="col-4"></div>
   </div>
 </div>
+
+
+
+
