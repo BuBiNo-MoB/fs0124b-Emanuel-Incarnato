@@ -11,7 +11,7 @@ import { ILoginData } from '../../modules/i-login-data';
 export class LoginComponent {
 
   loginData:ILoginData = {
-    email:'mario@varano.it',
+    email:'emanuel.incarnato@gmail.com',
     password:'password'
   }
 

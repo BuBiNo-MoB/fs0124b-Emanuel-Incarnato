@@ -79,6 +79,12 @@
       "age": 26,
       "email": "olivia.clark@email.com",
       "password": "olivia2223"
+    },
+    {
+      "email": "emanuel.incarnato@gmail.com",
+      "password": "$2a$10$stevZZuH00VaKUpfhPV2TOC1NyO/a2h8NZ/6lZpBqH1FgyXSZNm3.",
+      "firstname": "Emanuel",
+      "id": 11
     }
   ],
   "films": [
@@ -202,8 +208,6 @@
       "date": "1998",
       "image": "https://upload.wikimedia.org/wikipedia/en/0/0a/American_History_X_poster.jpg"
     }
-],
-"favourites": [
-
-]
+  ],
+  "favourites": []
 }

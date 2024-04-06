@@ -1,15 +1,19 @@
-<h1>Accedi</h1>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <h1>Accedi</h1>
+      <form>
 
-<form>
+        <input type="email" name="email" [(ngModel)]="loginData.email" class="text-center form-control" placeholder="email">
 
-  <input type="email" name="email"
-  [(ngModel)]="loginData.email"
-  class="form-control" placeholder="email">
+        <input type="password" name="password" [(ngModel)]="loginData.password" class="text-center form-control"
+          placeholder="password">
 
-  <input type="password" name="password"
-  [(ngModel)]="loginData.password"
-  class="form-control" placeholder="password">
+        <button (click)="signIn()" class="btn btn-success">Accedi</button>
+      </form>
+    </div>
+    <div class="col-4"></div>
 
-  <button (click)="signIn()" class="btn btn-success">Accedi</button>
-
-</form>
+  </div>
+</div>

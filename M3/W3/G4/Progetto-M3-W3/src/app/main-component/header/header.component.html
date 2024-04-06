@@ -8,12 +8,13 @@
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
       <li><a routerLink="/" class="nav-link px-2">Home</a></li>
-      <li><a routerLink="/dashboard" class="nav-link px-2">Dashboard</a></li>
+      <li *ngIf="isUserLoggedIn"><a routerLink="/dashboard" class="nav-link px-2">Dashboard</a></li>
     </ul>
 
     <div class="col-md-3 text-end">
-      <a routerLink="/auth/login" class="btn btn-outline-warning me-2">Login</a>
-      <a routerLink="/auth/register" class="btn btn-warning">Sign-up</a>
+      <a *ngIf="!isUserLoggedIn" routerLink="auth/login" class="btn btn-outline-warning me-2">Login</a>
+      <a *ngIf="!isUserLoggedIn" routerLink="auth/register" class="btn btn-warning me-2">Sign-Up</a>
+      <button *ngIf="isUserLoggedIn" (click)="logout()" class="btn btn-danger">Sign-Out</button>
     </div>
   </header>
 </div>
