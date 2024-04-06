@@ -1,3 +1,84 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Doe",
+      "age": 30,
+      "email": "john.doe@email.com",
+      "password": "john123"
+    },
+    {
+      "id": 2,
+      "firstname": "Alice",
+      "lastname": "Smith",
+      "age": 25,
+      "email": "alice.smith@email.com",
+      "password": "alice456"
+    },
+    {
+      "id": 3,
+      "firstname": "Michael",
+      "lastname": "Johnson",
+      "age": 35,
+      "email": "michael.johnson@email.com",
+      "password": "michael789"
+    },
+    {
+      "id": 4,
+      "firstname": "Emily",
+      "lastname": "Brown",
+      "age": 28,
+      "email": "emily.brown@email.com",
+      "password": "emily1011"
+    },
+    {
+      "id": 5,
+      "firstname": "Christopher",
+      "lastname": "Davis",
+      "age": 33,
+      "email": "christopher.davis@email.com",
+      "password": "chris1213"
+    },
+    {
+      "id": 6,
+      "firstname": "Jessica",
+      "lastname": "Wilson",
+      "age": 29,
+      "email": "jessica.wilson@email.com",
+      "password": "jessica1415"
+    },
+    {
+      "id": 7,
+      "firstname": "William",
+      "lastname": "Taylor",
+      "age": 32,
+      "email": "william.taylor@email.com",
+      "password": "william1617"
+    },
+    {
+      "id": 8,
+      "firstname": "Sophia",
+      "lastname": "Anderson",
+      "age": 27,
+      "email": "sophia.anderson@email.com",
+      "password": "sophia1819"
+    },
+    {
+      "id": 9,
+      "firstname": "Daniel",
+      "lastname": "Thomas",
+      "age": 31,
+      "email": "daniel.thomas@email.com",
+      "password": "daniel2021"
+    },
+    {
+      "id": 10,
+      "firstname": "Olivia",
+      "lastname": "Clark",
+      "age": 26,
+      "email": "olivia.clark@email.com",
+      "password": "olivia2223"
+    }
+  ]
 }
