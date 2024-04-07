@@ -7,5 +7,5 @@ export interface IUser {
   age: number
   email: string
   password: string
-  favoriteFilms?: IFilm[];
+  favoriteFilmId?: number;
 }

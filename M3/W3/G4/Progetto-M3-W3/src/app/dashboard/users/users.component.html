@@ -7,12 +7,9 @@
           <h5 class="card-title">Utente: {{ user.firstname }} {{ user.lastname }}</h5>
           <p class="card-text">Email: {{ user.email }}</p>
           <p class="card-text">Età: {{ user.age }}</p>
-          <p class="card-text">Film Preferiti:</p>
-          <ul>
-            <li *ngFor="let film of user.favoriteFilms">{{ film.title }}</li>
-          </ul>
         </div>
       </div>
     </div>
   </div>
 </div>
+
