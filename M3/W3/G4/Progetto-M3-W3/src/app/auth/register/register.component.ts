@@ -1,6 +1,5 @@
 import { AuthService } from './../auth.service';
 import { Component } from '@angular/core';
-import { ILoginData } from '../../modules/i-login-data';
 import { IUser } from '../../modules/i-user';
 import { Router } from '@angular/router';
 

@@ -19,10 +19,10 @@ export class DashboardComponent implements OnInit {
     this.authSvc.user$.subscribe(user => {
       this.user = user || undefined;
     });
-    this.getRandomFilms();
+    this.getFourFilms();
   }
 
-  getRandomFilms(): void {
+  getFourFilms(): void {
     this.filmService.getFourFilms()
       .subscribe(films => this.films = films);
   }

@@ -91,30 +91,6 @@
       "favoriteFilms": []
     },
     {
-      "email": "emanuel.incarnato@gmail.com",
-      "password": "$2a$10$stevZZuH00VaKUpfhPV2TOC1NyO/a2h8NZ/6lZpBqH1FgyXSZNm3.",
-      "firstname": "Emanuel",
-      "id": 11,
-      "age": "33",
-      "favoriteFilms": []
-    },
-    {
-      "email": "francescasbarigia@libero.it",
-      "password": "$2a$10$ozWCWi7rWLyfxzndbDymiuRk9lIbN1yhbbO.oqBCtq9xt44TAK7gW",
-      "firstname": "Francesca",
-      "id": 12,
-      "age": 38,
-      "favoriteFilms": []
-    },
-    {
-      "email": "bubi@no",
-      "password": "$2a$10$uAI6z5xjROqKg3rgm3GisOxMmNnd/6DfgGlC.EkUXCWoJ.A1aITCy",
-      "firstname": "Bubino",
-      "id": 13,
-      "age": "1",
-      "favoriteFilms": []
-    },
-    {
       "email": "glauco@ilcaneperfetto",
       "password": "$2a$10$nPouSH2Ve5FQEFFhn0JeLOCW5XX2ObLQfD2xbNVGRLVq79BW7b1au",
       "firstname": "Glauco",

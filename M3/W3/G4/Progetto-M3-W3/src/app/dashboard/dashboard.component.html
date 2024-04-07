@@ -6,9 +6,9 @@
 </div>
 <div class="container-fluid main">
   <div class="row text-center">
-    <div *ngFor="let film of films" class="col-lg-3 col-md-4 col-6 mb-4">
+    <div *ngFor="let film of films" class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
       <div class="card">
-        <img [src]="film.image" class="card-img-top" alt="">
+        <img [src]="film.image" class="img-fluid" alt="">
         <div class="card-body">
           <h5 class="card-title">{{ film.title }}</h5>
           <p class="card-text">Date: {{ film.date }}</p>
