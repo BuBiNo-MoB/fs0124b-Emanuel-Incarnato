@@ -7,21 +7,25 @@
       <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary mb-4 mt-3">
         <div class="form-floating mb-3">
           <input type="text" name="nome" [(ngModel)]="registerData.firstname" class="form-control text-center" placeholder="nome">
-          <label for="floatingInput">Name</label>
+          <label for="floatingInput">Nome</label>
         </div>
         <div class="form-floating mb-3">
-          <input type="email" name="email" [(ngModel)]="registerData.email" class="form-control text-center" placeholder="email">
-          <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="password" name="password" [(ngModel)]="registerData.password" class="form-control text-center"
-          placeholder="password">
-          <label for="floatingPassword">Password</label>
+          <input type="text" name="cognome" [(ngModel)]="registerData.lastname" class="form-control text-center" placeholder="nome">
+          <label for="floatingInput">Cognome</label>
         </div>
         <div class="form-floating mb-3">
           <input type="text" name="age" [(ngModel)]="registerData.age" class="form-control text-center"
           placeholder="Età">
           <label for="floatingPassword">Età</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" name="email" [(ngModel)]="registerData.email" class="form-control text-center" placeholder="email">
+          <label for="floatingInput">Indirizzo Email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" name="password" [(ngModel)]="registerData.password" class="form-control text-center"
+          placeholder="password">
+          <label for="floatingPassword">Password</label>
         </div>
         <button (click)="signUp()" class="w-50 btn btn-lg btn-success" type="submit">Sign up</button>
         <hr class="my-4">

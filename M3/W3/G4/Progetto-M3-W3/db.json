@@ -6,7 +6,8 @@
       "lastname": "Doe",
       "age": 30,
       "email": "john.doe@email.com",
-      "password": "john123"
+      "password": "john123",
+      "favoriteFilms": []
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "lastname": "Smith",
       "age": 25,
       "email": "alice.smith@email.com",
-      "password": "alice456"
+      "password": "alice456",
+      "favoriteFilms": []
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "lastname": "Johnson",
       "age": 35,
       "email": "michael.johnson@email.com",
-      "password": "michael789"
+      "password": "michael789",
+      "favoriteFilms": []
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "lastname": "Brown",
       "age": 28,
       "email": "emily.brown@email.com",
-      "password": "emily1011"
+      "password": "emily1011",
+      "favoriteFilms": []
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "lastname": "Davis",
       "age": 33,
       "email": "christopher.davis@email.com",
-      "password": "chris1213"
+      "password": "chris1213",
+      "favoriteFilms": []
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "lastname": "Wilson",
       "age": 29,
       "email": "jessica.wilson@email.com",
-      "password": "jessica1415"
+      "password": "jessica1415",
+      "favoriteFilms": []
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "lastname": "Taylor",
       "age": 32,
       "email": "william.taylor@email.com",
-      "password": "william1617"
+      "password": "william1617",
+      "favoriteFilms": []
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "lastname": "Anderson",
       "age": 27,
       "email": "sophia.anderson@email.com",
-      "password": "sophia1819"
+      "password": "sophia1819",
+      "favoriteFilms": []
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "lastname": "Thomas",
       "age": 31,
       "email": "daniel.thomas@email.com",
-      "password": "daniel2021"
+      "password": "daniel2021",
+      "favoriteFilms": []
     },
     {
       "id": 10,
@@ -78,32 +87,40 @@
       "lastname": "Clark",
       "age": 26,
       "email": "olivia.clark@email.com",
-      "password": "olivia2223"
+      "password": "olivia2223",
+      "favoriteFilms": []
     },
     {
       "email": "emanuel.incarnato@gmail.com",
       "password": "$2a$10$stevZZuH00VaKUpfhPV2TOC1NyO/a2h8NZ/6lZpBqH1FgyXSZNm3.",
       "firstname": "Emanuel",
-      "id": 11
+      "id": 11,
+      "age": "33",
+      "favoriteFilms": []
     },
     {
       "email": "francescasbarigia@libero.it",
       "password": "$2a$10$ozWCWi7rWLyfxzndbDymiuRk9lIbN1yhbbO.oqBCtq9xt44TAK7gW",
       "firstname": "Francesca",
-      "id": 12
+      "id": 12,
+      "age": 38,
+      "favoriteFilms": []
     },
     {
       "email": "bubi@no",
       "password": "$2a$10$uAI6z5xjROqKg3rgm3GisOxMmNnd/6DfgGlC.EkUXCWoJ.A1aITCy",
       "firstname": "Bubino",
-      "id": 13
+      "id": 13,
+      "age": "1",
+      "favoriteFilms": []
     },
     {
       "email": "glauco@ilcaneperfetto",
       "password": "$2a$10$nPouSH2Ve5FQEFFhn0JeLOCW5XX2ObLQfD2xbNVGRLVq79BW7b1au",
       "firstname": "Glauco",
       "age": "7",
-      "id": 14
+      "id": 14,
+      "favoriteFilms": []
     }
   ],
   "films": [

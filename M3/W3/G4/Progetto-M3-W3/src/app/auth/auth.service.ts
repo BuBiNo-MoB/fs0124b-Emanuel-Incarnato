@@ -119,4 +119,8 @@ export class AuthService {
             break;
     }
   }
+
+  getCurrentUser(): Observable<IUser | null> {
+    return this.user$;
+  }
 }

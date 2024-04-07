@@ -20,4 +20,9 @@ export class FilmService {
   getFourFilms(): Observable<IFilm[]> {
     return this.http.get<IFilm[]>(`${this.apiUrl}?_limit=4`);
   }
+
+  getFilmById(id: number): Observable<IFilm> {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<IFilm>(url);
+  }
 }

@@ -1,12 +1,12 @@
 <div class="container-fluid" id="main">
-  <div class="row">
+  <div class="row text-center">
     <div *ngFor="let film of films" class="col-lg-3 col-md-4 col-6 mb-4">
       <div class="card mt-4">
         <img [src]="film.image" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">{{ film.title }}</h5>
           <p class="card-text">Date: {{ film.date }}</p>
-          <button class="btn btn-primary" >Aggiungi ai preferiti</button>
+          <button class="btn btn-warning" >Aggiungi ai preferiti</button>
         </div>
       </div>
     </div>
