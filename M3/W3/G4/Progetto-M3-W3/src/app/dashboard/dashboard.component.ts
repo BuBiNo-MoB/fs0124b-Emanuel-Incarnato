@@ -1,23 +1,29 @@
-import { IUser } from './../modules/i-user';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
+import { FilmService } from '../service/film.service';
+import { IFilm } from '../modules/i-film';
+import { IUser } from '../modules/i-user';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.scss'
+  styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
+  user: IUser | undefined;
+  films: IFilm[] = [];
 
-  constructor(private authSvc:AuthService){}
+  constructor(private authSvc: AuthService, private filmService: FilmService) {}
 
-  user!:IUser|undefined
-  ngOnInit(){
-
+  ngOnInit(): void {
     this.authSvc.user$.subscribe(user => {
+      this.user = user || undefined;
+    });
+    this.getRandomFilms();
+  }
 
-      this.user = user || undefined
-    })
-
+  getRandomFilms(): void {
+    this.filmService.getFourFilms()
+      .subscribe(films => this.films = films);
   }
 }

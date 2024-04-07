@@ -1,5 +1,3 @@
-// film.service.ts
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -17,5 +15,9 @@ export class FilmService {
 
   getFilms(): Observable<IFilm[]> {
     return this.http.get<IFilm[]>(this.apiUrl);
+  }
+
+  getFourFilms(): Observable<IFilm[]> {
+    return this.http.get<IFilm[]>(`${this.apiUrl}?_limit=4`);
   }
 }

@@ -4,22 +4,27 @@ import { DashboardComponent } from './dashboard.component';
 import { FilmComponent } from './film/film.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UsersComponent } from './users/users.component';
+import { AuthGuard } from '../auth/auth.guard';
 
 const routes: Routes = [
   { path: '',
-    component: DashboardComponent
+    component: DashboardComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:'films',
-    component: FilmComponent
+    component: FilmComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:'users',
-    component: UsersComponent
+    component: UsersComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:'profile',
-    component: ProfileComponent
+    component: ProfileComponent,
+    canActivate: [AuthGuard]
   },
 ];
 

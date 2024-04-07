@@ -1,5 +1,19 @@
-<div class="container">
+<div class="container-fluid main">
   <div class="row text-center">
-    <h1>Welcome {{user?.firstname}}!</h1>
+    <h1>Benvenuto {{user?.firstname}}!</h1>
+    <h2>Novità disponibili</h2>
+  </div>
+</div>
+<div class="container-fluid main">
+  <div class="row">
+    <div *ngFor="let film of films" class="col-lg-3 col-md-4 col-6 mb-4">
+      <div class="card">
+        <img [src]="film.image" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{ film.title }}</h5>
+          <p class="card-text">Date: {{ film.date }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,7 +1,7 @@
-<div class="container" id="main">
+<div class="container-fluid" id="main">
   <div class="row">
     <div *ngFor="let film of films" class="col-lg-3 col-md-4 col-6 mb-4">
-      <div class="card">
+      <div class="card mt-4">
         <img [src]="film.image" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">{{ film.title }}</h5>
